@@ -2,55 +2,46 @@
 Amandas Notes (Hela mappen skall tas bort i final version):
 
 Inlämningsuppgift: Kundprojekt
-
-I denna inlämning ska ni utgå från en s.k. "brief" från en kund, och ta fram en webbplats utifrån en given design.
-One-pager -> Sidan ska vara en s.k. "onepager", dvs. du ska bara scrolla upp och ner på sidan för att komma till sida 2. Du ska inte skapa nya HTML-filer för respektive sida.
+    I denna inlämning ska ni utgå från en s.k. "brief" från en kund, och ta fram en webbplats utifrån en given design.
+    One-pager -> Sidan ska vara en s.k. "onepager", dvs. du ska bara scrolla upp och ner på sidan för att komma till sida 2. Du ska inte skapa nya HTML-filer för respektive sida.
 -------------------------------------------------------
 
 Brief/bakgrund
-Du har precis fått jobb på webbyrån Justin Time AB. Byråns kund Kantarella Löwenskog har gett dig i uppdrag att ta fram en webbplats åt hennes nya företag, 
-och webbplatsens design tas fram av kunden själv. 🤦 
-Kantarella har precis blivit klar med sitt designarbete och tagit semester, liksom byråns projektledare Karin, så det är ju just typiskt. 
-Du får helt enkelt improvisera på de bitar som är otydliga i briefen angående designen.
+        Du har precis fått jobb på webbyrån Justin Time AB. Byråns kund Kantarella Löwenskog har gett dig i uppdrag att ta fram en webbplats åt hennes nya företag, 
+        och webbplatsens design tas fram av kunden själv. 🤦 
+        Kantarella har precis blivit klar med sitt designarbete och tagit semester, liksom byråns projektledare Karin, så det är ju just typiskt. 
+        Du får helt enkelt improvisera på de bitar som är otydliga i briefen angående designen.
 
 Brief: 
-Hej! 
-Kul att vi äntligen är igång med projektet. Jag har lagt bilder och resurser i mappen som jag bifogar, 
-du hittar det i repot som vår utvecklare mallat. Toppen om sidan kan vara responsiv.
-Färgkoden till den gröna färgen är 100%, 0%, 78%, 0% och den gula 0%, 5%, 79%, 0%.
-Formulärets cancel-knapp ska ha färgen 263°, 100%, 73%.
+        Hej! 
+        Kul att vi äntligen är igång med projektet. Jag har lagt bilder och resurser i mappen som jag bifogar, 
+        du hittar det i repot som vår utvecklare mallat. Toppen om sidan kan vara responsiv.
+        Färgkoden till den gröna färgen är 100%, 0%, 78%, 0% och den gula 0%, 5%, 79%, 0%.
+        Formulärets cancel-knapp ska ha färgen 263°, 100%, 73%.
 
-Jag vill att när man för musen över salladsbilden så ska pilen åka lite neråt. 
-Men inte "hoppa" utan det ska vara en smooth rörelse. Sen när man tar bort musen så åker pilen tillbaka. 
-Lite snappy sådär, inget jättelångsamt. Men inte för fort heller så man inte hinner se.
-Vi vill ha lite dynamisk rubbe-effekt så toppen om texten på huvudrubben kan ligga omlott. 
-Du ser på skissen där det står "chickpeas".
+        Jag vill att när man för musen över salladsbilden så ska pilen åka lite neråt. 
+        Men inte "hoppa" utan det ska vara en smooth rörelse. Sen när man tar bort musen så åker pilen tillbaka. 
+        Lite snappy sådär, inget jättelångsamt. Men inte för fort heller så man inte hinner se.
+        Vi vill ha lite dynamisk rubbe-effekt så toppen om texten på huvudrubben kan ligga omlott. 
+        Du ser på skissen där det står "chickpeas".
 
-Typsnittet är Jockey One. Du kan säkert hitta det själv. 
-Det andra typsnittet är Roboto Condensed.
+        Typsnittet är Jockey One. Du kan säkert hitta det själv. 
+        Det andra typsnittet är Roboto Condensed.
 
-På menyn vore det snyggt om alla balkarna rörde sig lite i sidled 
-när man för musen över dem, ett par pixlar bara.
-Fint om menyn kan animeras till en stäng-ikon när menyn öppnas.
+        På menyn vore det snyggt om alla balkarna rörde sig lite i sidled 
+        när man för musen över dem, ett par pixlar bara.
+        Fint om menyn kan animeras till en stäng-ikon när menyn öppnas.
 
-Sorry för tight deadline men du vet hur kunder är! 
-Bråttom bråttom. Lycka till och happy halloween va!
-Hälsningar Karin 
+        Sorry för tight deadline men du vet hur kunder är! 
+        Bråttom bråttom. Lycka till och happy halloween va!
+        Hälsningar Karin 
 
-PS. Kundens kompanjon kör webben utan CSS så kolla att sidan ser schysst ut även utan CSS, du vet - läsbar. 
-Och kolla så det går att tabba å sånt. Ja du vet, du har ju koll på det där med tillgänglighet. 
+        PS. Kundens kompanjon kör webben utan CSS så kolla att sidan ser schysst ut även utan CSS, du vet - läsbar. 
+        Och kolla så det går att tabba å sånt. Ja du vet, du har ju koll på det där med tillgänglighet. 
 
-PS2. Vänstersidans titel/meny ska följa med på sidan när man scrollar! 
-Kan du lösa det? Också bra om den öppna menyn alltid ligger fixerad. Vi hörs!
----------------------------------------------------------
+        PS2. Vänstersidans titel/meny ska följa med på sidan när man scrollar! 
+        Kan du lösa det? Också bra om den öppna menyn alltid ligger fixerad. Vi hörs!
 
-Notera
-
-1. Länkarna i menyn ska inte leda någonstans. Du behöver inte kunna stänga menyn när du klickat på en länk (bara via menyknappen).
-2. Du behöver inte kunna stänga cookie-texten.
-3. Du behöver inte lägga in något JavaScript på sidan.
-4. Sidan ska vara en "onepager", du ska inte ha flera sidor. Dvs. första sidan täcker upp hela skärmens höjd på desktop. Scrollar du, dyker textsidan upp.
-5. När man klickar på "Explore menu" så ska sidan åka ner till menyn.
 
 ----------------------------------------------------------
 
@@ -60,15 +51,30 @@ Ibland saknas det information, t.ex. startsidan på mobilen. Titta på resursern
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Notes from Jenni - uppgift + från lektion: 
+1. Länkarna i menyn ska inte leda någonstans.
+2. Du behöver inte kunna stänga menyn när du klickat på en länk (bara via menyknappen).
+3. Du behöver inte kunna stänga cookie-texten.
+4. Du behöver inte lägga in något JavaScript på sidan.
+5. Sidan ska vara en "onepager", du ska inte ha flera sidor. - Dvs. första sidan täcker upp hela skärmens höjd på desktop. Scrollar du, dyker textsidan upp.
+6. När man klickar på "Explore menu" så ska sidan åka ner till menyn.
+7. Tips att göra en sida i taget.
+8. Inga tables, bara grid och flex!
+9. Undvik använda css:visibility:collapse 
+10. Ta ned bildstorlekar för de olika layouterna
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Checklista - För dagen: 
 * Skriv ner instruktioner (x)
 * Skapa checklistor, kan fyllas på i ett senare skede (x)
-* Lektion kl. 13.00 ()
-
-* Skriv ner semantiska taggar och dess specar ()
+* Lektion kl. 13.00 (x)
+* Skriv ner semantiska taggar och dess specar (x)
+* Lär dig om OVERFLOW ()
+* Fixa SASS, måste användas! - om man bara skriver CSS i sass fil är det G. () 
 * Se över layout, rita boxar i paint på biderna, spara under Antecknignar-mappen ()
 * Börja på HTML skelett på vägen hem med bara div ()
 * Byt alla div till lämplig semantiskt element - se lista ()
@@ -78,19 +84,17 @@ Checklista - För dagen:
 --------------------------------------------------------------------------------------------------
 
 
-
-Checklista HTML:
-1. Skelett - Commit ()
+Checklista HTML                                                                          
+1. Skelett - Commit () 
 2. Fyll i siffror i textblock för att hålla ordning på ordning ()
 3. Bilder, vilka ska kallas i html? Lägg in dem, srcset! - Commit ()
-4. Bilder, alt text + sizes check - Commit ()
----------------- Efter mobile CSS ----------------------- 
-5. Byt till riktigt text i innehåll - Commit 
-    (risk för att någon tagg försvinner om man är för snabb, bra med backup) ()
+4. Bilder, alt text + sizes check - Commit () 
+---------------- Efter mobile CSS -----------------------                                          
+5. Byt till riktigt text i innehåll - Commit ()
+    (risk för att någon tagg försvinner om man är för snabb, bra med backup) 
 6. META taggar, se förra uppgiften, prata med Matthias - Commit ()
 7. Validera för att hitta fel ()
-8. Tillgänglighet - Lighthouse () 
-
+8. Tillgänglighet - Lighthouse ()
 
 
 --------------------------------------------------------------------------------------------------
@@ -126,7 +130,6 @@ Ta ett parti i taget, inte en hel sida!
 8. Klick effekter? ()
 
 
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -160,7 +163,6 @@ CSS media querys
     *Fint om menyn kan animeras till en stäng-ikon när menyn öppnas.
 
 
-
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -169,6 +171,7 @@ Checklista full project - Workflow:
 * Se alla videos och preppa inställningar för Compiler pre-tågresa hem. ()
 * Spalta upp i vilken ordning saker bör göras () 
 
+* Skala bilderna så de blir små och sidan kan ladda snabbare ()
 * Skelett på HTML + Kom fram till bra namngivningsprincip för classer som följer ett mönster för att lättare komma ihåg - Commit ()
 * Lägg borders på alla divs + semantiska element i CSS för lättare hantering - Commit ()
 
@@ -189,6 +192,6 @@ Checklista full project - Workflow:
 
 * Validera HTML och CSS - Skapa PDF för inlämning ()
 * Ta screenshots på alla screen sizes i samtliga webbläsare (Chrome + Edge + Firefox + -Safari- + Brave) ()
-* Tillgänglighetsanalys - Lighthouse, Screenshot()
+* Tillgänglighetsanalys - Lighthouse, Screenshot ()
 * Pusha sista gång till GitHub()
-* Lägg upp i It'sLearning()
+* Lägg upp i It'sLearning ()
