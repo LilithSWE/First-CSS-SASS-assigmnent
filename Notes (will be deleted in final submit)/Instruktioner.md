@@ -69,16 +69,7 @@ Notes from Jenni - uppgift + från lektion:
 
 
 Checklista - För dagen: 
-* Skriv ner instruktioner (x)
-* Skapa checklistor, kan fyllas på i ett senare skede (x)
-* Lektion kl. 13.00 (x)
-* Skriv ner semantiska taggar och dess specar (x)
 * Lär dig om OVERFLOW ()
-* Fixa SASS, måste användas! - om man bara skriver CSS i sass fil är det G. () 
-* Se över layout, rita boxar i paint på biderna, spara under Antecknignar-mappen ()
-* Börja på HTML skelett på vägen hem med bara div ()
-* Byt alla div till lämplig semantiskt element - se lista ()
-* Skriv in ()
 
 
 --------------------------------------------------------------------------------------------------
