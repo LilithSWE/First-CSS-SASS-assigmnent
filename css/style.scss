@@ -1,10 +1,7 @@
+@use"pageOne";
+
 body {
   background-color: yellow;
+  padding: 10px;
 }
 
-//Testing SASS compiler vs css file
-p {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 500;
-  color: cornflowerblue;
-}

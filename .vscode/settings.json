@@ -1,5 +1,8 @@
 {
   "liveSassCompile.settings.generateMap": false,
+
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
@@ -8,8 +11,10 @@
       "savePathReplacementPairs": null
     }
   ],
-  "liveSassCompile.settings.autoprefix": [
 
+  "liveSassCompile.settings.autoprefix": [
+    
   ],
+
   "liveSassCompile.settings.watchOnLaunch": true
 }

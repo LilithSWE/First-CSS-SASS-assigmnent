@@ -1,1 +1,1 @@
-body{background-color:#ff0}p{font-family:"Courier New",Courier,monospace;font-weight:500;color:#6495ed}
+.grid_layout{display:grid;grid-template-columns:repeat(12, 1fr);gap:10px}div.grid_layout aside{background-color:#000;grid-column:span 1}div.grid_layout main{grid-column:2/span 11;background-color:#000}button{width:1fr;height:1fr}p{color:#adff2f}body{background-color:#ff0;padding:10px}
