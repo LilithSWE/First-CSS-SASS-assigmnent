@@ -93,7 +93,7 @@ Checklista HTML
 
 Checklista CSS:
 Start: 
-1. Box reset 
+1. Box reset (X)
 2. Vilka styles är övergripande på sidan, group selectors?
  * Fonts - style + färg (Jockey One + Roboto Condensed) - ladda in i CSS?
     (Färgkoden 

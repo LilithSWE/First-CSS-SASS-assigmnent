@@ -1,0 +1,101 @@
+//------------- meny aside: alltid synlig -------------
+.menu_styling{
+  grid-column: 1;
+  background-color: black;
+  color: white;
+  justify-items: center;
+  
+  height: 100vh;
+  position: sticky;
+  top: 0;
+
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: minmax(0,1fr);
+}
+
+.menu
+ { 
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+ }
+ 
+button{
+  background: transparent;
+  border: 0;
+  height: 35px;
+  width: 35px;
+}
+
+button span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #FFF136;
+  border-radius: 4px;
+  margin-bottom: 3px;
+} 
+
+input{
+  width: 35px;
+  height: 35px;
+  z-index: 2;
+  opacity: 0;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+input:checked + .menu button span{
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked + .menu button span:nth-child(1){
+  transform: rotate(45deg);
+}
+input:checked + .menu button span:nth-child(2){
+  opacity: 0;
+}
+input:checked + .menu button span:nth-child(3){
+  transform: rotate(-45deg);
+}
+
+h1 {
+  color: #FFFFFF;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+nav{
+  top: 0;
+  left: 0;  
+  position: fixed;
+  background-color: #AC76FF;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input:checked + .menu nav {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly; //Ändra?
+  text-align: center;
+}
+
+nav ul li{
+  color: #FFFFFF;
+}

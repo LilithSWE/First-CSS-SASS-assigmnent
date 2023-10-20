@@ -27,13 +27,15 @@ Fatback sausage tongue pastrami, chuck tail short ribs boudin cow beef ribs jerk
 
 Porchetta burgdoggen filet mignon, fatback tail corned beef salami buffalo. Corned beef pork chop hamburger strip steak pork belly. Shankle pork corned beef, pastrami short loin jerky pork belly ham kielbasa ham hock biltong strip steak. Chuck kevin tail ham hock ball tip turducken tenderloin pancetta chislic beef ribs.
 
+------------------------------------------
+
 
 Turkos färg: 
 #28BCEA
 
 
 ---------------------------------------------------
-CSS
+CSS för page 2, färgglada lådor 
 
 [13:49] Jenni Pulli
 .menu-item-popular,
@@ -61,7 +63,7 @@ CSS
 }
 
 -----------------------------------------------------
-HTML
+HTML för page 2, färgglada lådor 
 
   <div>
     <span class="menu-item-popular">Popular</span>
@@ -70,6 +72,9 @@ HTML
   <div class="menu-item-vegan">
     <span>Vegan</span>
   </div>
+
+
+
 
   --------------------------------------------------
 

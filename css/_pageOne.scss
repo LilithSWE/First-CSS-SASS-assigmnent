@@ -1,26 +1,22 @@
 
-.grid_layout {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 10px;
-}
-
-div.grid_layout aside {
-  background-color: black;
-  grid-column: span 1;
-  
-}
-
 div.grid_layout main {
-  grid-column: 2/ span 11;
+  grid-column: 2/ span 13;
   background-color: black;
 }
 
-button{
-  width: 1fr;
-  height: 1fr;
-}
 
 p{
+  color: rgb(109, 47, 255);
+}
+
+h2.tahini {
   color: greenyellow;
+}
+
+p.chickpeas{
+  color: yellow; //CHANGE - tillfällig!!
+}
+
+p.drizzle{
+  color: purple; //CHANGE - tillfällig!!
 }

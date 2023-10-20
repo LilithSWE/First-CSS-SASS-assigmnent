@@ -1,7 +1,15 @@
-@use"pageOne";
+@use "menu";
+@use "pageOne";
+@use "pageTwo";
+@use "pageThree";
 
 body {
   background-color: yellow;
-  padding: 10px;
 }
 
+.grid_layout {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0,1fr));
+ 
+  gap: 16px;
+}
