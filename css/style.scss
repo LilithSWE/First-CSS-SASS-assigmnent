@@ -10,10 +10,15 @@ body {
 
 .container {
   height: 100vh;
+  width: auto;
   display: grid;
   grid-template-rows: repeat(12, minmax(0,1fr));
   grid-template-columns: repeat(1, minmax(0,1fr));
   gap: 5px;
+
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 
   margin-left: 8px;
   margin-right: 8px;
