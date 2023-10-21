@@ -1,15 +1,21 @@
-@use "menu";
 @use "pageOne";
 @use "pageTwo";
 @use "pageThree";
+@use "menu";
 
 body {
-  background-color: yellow;
+  background-color: rgb(28, 23, 99);
+  font-family: 'Jockey One', 'Roboto Condensed', serif;
 }
 
-.grid_layout {
+.container {
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0,1fr));
- 
-  gap: 16px;
+  grid-template-rows: repeat(12, minmax(0,1fr));
+  grid-template-columns: repeat(1, minmax(0,1fr));
+  gap: 5px;
+
+  margin-left: 8px;
+  margin-right: 8px;
 }
+
