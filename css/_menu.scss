@@ -3,72 +3,116 @@
   1024
   1280*/
 
-
-/* .menu_styling{
-  grid-column: 1;
+.heading_container{
+  position: fixed;
+  width: 100%;
+  height: 60px;
   background-color: black;
-  color: white;
-  justify-items: center;
-  
-  height: 100vh;
-  position: sticky;
-  top: 0;
-
-  display: grid;
-  grid-template-columns: minmax(0,1fr);
-  grid-template-rows: minmax(0,1fr);
-}
-
-.menu
- { 
-  grid-column: 1;
+  grid-column: span 2;
   grid-row: 1;
   display: grid;
- }
- 
+  z-index: 1;
+  grid-template-columns: 80% 20%;
+  padding: 3px;
+}
+
+h1{
+  color: white;
+  margin: 0;
+  align-self: center;
+  letter-spacing: 1.5dvw;
+  word-spacing: 0.5rem;
+  padding-left: 10px;
+}
+
+input{
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;  
+  z-index: 3;
+  position: fixed; 
+  top: 15px;
+  right: 30px;
+}
+
 button{
   background: transparent;
   border: 0;
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
+  z-index: 2;
+  position: absolute;
+  margin-top: 10px;
+  top: 5px;
+  right: 37px;
 }
-
+    
 button span {
-  display: block;
-  width: 20px;
-  height: 3px;
+  width: 30px;
+  height: 5px;
   background-color: #FFF136;
   border-radius: 4px;
   margin-bottom: 3px;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 } 
 
-input{
-  width: 35px;
-  height: 35px;
-  z-index: 2;
+input:checked + .menu .heading_container button span:nth-child(1){
+  transform: rotate(45deg);
+}
+input:checked + .menu .heading_container button span:nth-child(2){
   opacity: 0;
-  grid-column: 1;
-  grid-row: 1;
+}
+input:checked + .menu .heading_container button span:nth-child(3){
+  transform: rotate(-45deg);
 }
 
-input:checked + .menu button span{
+
+input:checked + .menu .heading_container button span{
   position: absolute;
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
 
-input:checked + .menu button span:nth-child(1){
-  transform: rotate(45deg);
-}
-input:checked + .menu button span:nth-child(2){
-  opacity: 0;
-}
-input:checked + .menu button span:nth-child(3){
-  transform: rotate(-45deg);
+input:checked + .menu nav {
+  opacity: 1;
 }
 
-h1 {
+.menu{
+  grid-column: span 2;
+  height: 100vh;
+  display: inherit;
+}
+
+nav {
+  background-color: #AC76FF;
+  height: 100%;
+  min-height: 450px;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+nav ul li{
   color: #FFFFFF;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+
+/*
+h1 {
   writing-mode: vertical-lr;
   text-orientation: upright;
 }
@@ -80,7 +124,6 @@ nav{
   background-color: #AC76FF;
   width: 100vw;
   height: 100vh;
-  visibility: hidden;
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -101,6 +144,5 @@ nav ul {
   text-align: center;
 }
 
-nav ul li{
-  color: #FFFFFF;
+
 } */
