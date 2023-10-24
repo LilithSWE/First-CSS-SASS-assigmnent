@@ -11,7 +11,7 @@
   grid-column: span 2;
   grid-row: 1;
   display: grid;
-  z-index: 1;
+  z-index: 8;
   grid-template-columns: 80% 20%;
   padding: 3px;
 }
@@ -28,8 +28,8 @@ h1{
 input{
   width: 40px;
   height: 40px;
-  opacity: 0.5;  
-  z-index: 3;
+  opacity: 0;  
+  z-index: 10;
   position: fixed; 
   top: 15px;
   right: 30px;
@@ -40,7 +40,7 @@ button{
   border: 0;
   height: 40px;
   width: 40px;
-  z-index: 2;
+  z-index: 9;
   position: absolute;
   margin-top: 10px;
   top: 5px;
@@ -50,7 +50,7 @@ button{
 button span {
   width: 30px;
   height: 5px;
-  background-color: #FFF136;
+  background-color: $yellowColor;
   border-radius: 4px;
   margin-bottom: 3px;
   display: block;
@@ -82,16 +82,20 @@ input:checked + .menu nav {
   grid-column: span 2;
   height: 100vh;
   display: inherit;
+  position: relative;
 }
 
 nav {
   background-color: #AC76FF;
   height: 100%;
   min-height: 450px;
+  width: 100%;
   grid-column: 1 / span 2;
   grid-row: 1;
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 5;
+  position: fixed; 
 }
 
 nav ul {
