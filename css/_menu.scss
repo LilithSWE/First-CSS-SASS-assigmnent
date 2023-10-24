@@ -54,8 +54,20 @@ button span {
   border-radius: 4px;
   margin-bottom: 3px;
   display: block;
+  position: relative;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 } 
+
+input:hover + .menu .heading_container button span:nth-child(1){
+  right: 5px;
+}
+input:hover + .menu .heading_container button span:nth-child(2){
+  left: 5px;
+}
+input:hover + .menu .heading_container button span:nth-child(3){
+  right: 5px;
+}
+
 
 input:checked + .menu .heading_container button span:nth-child(1){
   transform: rotate(45deg);
@@ -70,10 +82,10 @@ input:checked + .menu .heading_container button span:nth-child(3){
 
 input:checked + .menu .heading_container button span{
   position: absolute;
+  top: 1rem;
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
-
 input:checked + .menu nav {
   opacity: 1;
 }
