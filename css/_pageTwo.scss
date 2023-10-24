@@ -2,3 +2,40 @@
   1024
   1280*/
 
+  .page2_container{
+    border: 1px solid red;
+    grid-column: span 2;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+ 
+.menu_images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.hummus{
+  grid-column: span 1;
+}
+.chickpeas_img{
+  grid-column: span 1;
+}
+.yoghurt{
+  grid-column: span 1;
+}
+
+.page2_menu{
+  height: 100px;
+  width: 100px;
+}
