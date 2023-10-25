@@ -2,12 +2,12 @@
   1024
   1280*/
 .page1_container{
-  border-top: 10px solid $yellowColor;
+  border-top: 25px solid $yellowColor;
   grid-column: span 2;
   grid-row: 2 / span 1;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 1fr;
   height: 1fr;
   justify-content: center;
   align-content: center;
@@ -63,14 +63,13 @@
 
 
 .container_img_arrow {   //FORTSÄTT HÄR! 
-  height: auto;
-  width: 100vw;
   display: block;
   position:relative;
 }
 .sallad{
  height: auto;
- width: 100vw;
+ width: 100%;
+ object-fit: contain;
 }
 .white_arrow{
   height: 30px;
@@ -96,7 +95,7 @@
   align-items: center;
   line-height: 2rem;
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 
 .page1_bottom_part p{

@@ -5,6 +5,8 @@
 
 .heading_container{
   position: fixed;
+  top: 0;
+  left:0;
   width: 100vw;
   height: 60px;
   background-color: black;
@@ -13,7 +15,8 @@
   display: grid;
   z-index: 8;
   grid-template-columns: 80% 20%;
-  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h1{
@@ -28,11 +31,11 @@ h1{
 input{
   width: 40px;
   height: 40px;
-  opacity: 0;  
+  opacity: 0.5;  
   z-index: 10;
   position: fixed; 
   top: 15px;
-  right: 30px;
+  right: 34px;
 }
 
 button{
@@ -41,10 +44,10 @@ button{
   height: 40px;
   width: 40px;
   z-index: 9;
-  position: absolute;
+  position: fixed;
   margin-top: 10px;
   top: 5px;
-  right: 37px;
+  right: 35px;
 }
     
 button span {
