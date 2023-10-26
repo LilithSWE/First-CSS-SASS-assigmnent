@@ -41,14 +41,14 @@
 <body>
   <div class="container"> 
 
-    <input type="checkbox"> 
+    <input class="button_animation" type="checkbox"> 
 
     <div class="menu">
 
       <div class="heading_container">
         <h1>TOUGH COOKIE</h1> 
-          <button>
-            <span> </span>
+          <button class="nav_button">
+           <span> </span>
            <span> </span>
            <span> </span>
           </button> 
@@ -189,64 +189,80 @@
     </div> 
 
     <!--PAGE 3-->
-<!--     <div class="page3_container">
+     <div class="page3_container">
       <section class="contact_form">
         <form action="www.example.com/contact">
-            <fieldset>
-                <legend><h2>BOOK YOUR TABLE</h2></legend>
-                <label>NAME
-                    <input type="text" name="name" size="15">
-                </label>
-                <label>E-MAIL
-                    <input type="email" name="email" size="15">
-                </label>            
-                <label>PHONE
-                  <input type="tel" name="telephone" size="15">
-                </label>
-                <label>DATE
-                    <input type="date" name="date" size="15">
-                </label>
-                <label>PARTY SIZE
-                  <input type="number" name="number" size="15">
-                </label>
-                <label>ALLERGIES
-                  <input type="text" name="allergies" size="15">
-                </label>
-                <input type="reset" name="reset" value="CANCEL">
-                <input type="submit" name="send" value="REQUEST">
+          <fieldset>
+            <legend><h2>BOOK YOUR TABLE</h2></legend>
+            <label>NAME
+              <input type="text" name="name" size="15">
+            </label>
+            <label>E-MAIL
+              <input type="email" name="email" size="15">
+            </label>            
+            <label>PHONE
+              <input type="tel" name="telephone" size="15">
+            </label>
+            <label>DATE
+              <input type="text" name="date" size="15">
+            </label>
+            <label>PARTY SIZE
+              <input type="number" name="number" size="15">
+            </label>
+            <label>ALLERGIES
+              <input type="text" name="allergies" size="15">
+            </label>
+            <div class="contact_form_buttons">
+              <input class="reset" type="reset" name="reset" value="CANCEL">
+              <input  class="request" type="submit" name="send" value="REQUEST">
+            </div>
+            
             </fieldset>
         </form>
       </section>
-
       <div class="contact_info_container">
-        <figure>
-          <img class="contact_info_icon"
-          src="assets/icons/telphone.svg"
-          alt="A blue phone icon">
-        </figure>
-        <figure>
-          <img class="contact_info_icon"
-          src="assets/icons/@.svg"
-          alt="A blue curly A icon">
-        </figure>
-        <figure>
-          <img class="contact_info_icon"
-          src="assets/icons/geotag.svg"
-          alt="A blue geotag icon">
-        </figure>
-        <div class="contact_info_text">
-          <p>+46 8 123 45 67</p>
-          <p>book@toughcookie.com</p>
-          <p>Brända Tomten 1131 Stockholm</p>
-        </div>
 
-        <div class="pop_up">
-          <p>You should accept cookies.</p>
-          <button class="decline_button">DECLINE</button>
-          <button class="accept_button">ACCEPT</button>
+        <div class="contact_info_background"></div>
+
+        <div class="contact_info_text">
+          <figure>
+            <img class="contact_info_icon"
+            src="assets/icons/telphone.svg"
+            alt="A blue phone icon"
+            loading="lazy"
+            height="auto"
+            width="100%">
+          </figure>
+          <p>+46 8 123 45 67</p>
+          <figure>
+            <img class="contact_info_icon"
+            src="assets/icons/@.svg"
+            alt="A blue curly A icon"
+            loading="lazy"
+            height="auto"
+            width="100%">
+          </figure>
+          <p>book@toughcookie.com</p>
+          <figure>
+            <img class="contact_info_icon"
+            src="assets/icons/geotag.svg"
+            alt="A blue geotag icon"
+            loading="lazy"
+            height="auto"
+            width="100%">
+          </figure>
+          <p>Brända Tomten 1131 Stockholm</p>         
         </div>
       </div>
-    </div> -->
+
+      <div class="pop_up">
+        <p>You should accept cookies.</p>
+        <button class="decline_button">DECLINE</button>
+        <button class="accept_button">ACCEPT</button>
+      </div>
+
+    </div> 
+  
 
   </div> <!--Grid layouten-->
 </body>

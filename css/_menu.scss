@@ -28,17 +28,17 @@ h1{
   padding-left: 10px;
 }
 
-input{
+.button_animation{
   width: 40px;
   height: 40px;
-  opacity: 0.5;  
+  opacity: 0;  
   z-index: 10;
   position: fixed; 
   top: 15px;
   right: 34px;
 }
 
-button{
+button.nav_button{
   background: transparent;
   border: 0;
   height: 40px;
@@ -61,35 +61,35 @@ button span {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 } 
 
-input:hover + .menu .heading_container button span:nth-child(1){
+input.button_animation:hover + .menu .heading_container button span:nth-child(1){
   right: 5px;
 }
-input:hover + .menu .heading_container button span:nth-child(2){
+input.button_animation:hover + .menu .heading_container button span:nth-child(2){
   left: 5px;
 }
-input:hover + .menu .heading_container button span:nth-child(3){
+input.button_animation:hover + .menu .heading_container button span:nth-child(3){
   right: 5px;
 }
 
 
-input:checked + .menu .heading_container button span:nth-child(1){
+input.button_animation:checked + .menu .heading_container button span:nth-child(1){
   transform: rotate(45deg);
 }
-input:checked + .menu .heading_container button span:nth-child(2){
+input.button_animation:checked + .menu .heading_container button span:nth-child(2){
   opacity: 0;
 }
-input:checked + .menu .heading_container button span:nth-child(3){
+input.button_animation:checked + .menu .heading_container button span:nth-child(3){
   transform: rotate(-45deg);
 }
 
 
-input:checked + .menu .heading_container button span{
+input.button_animation:checked + .menu .heading_container button span{
   position: absolute;
   top: 1rem;
   z-index: 1;
   transition: all 0.3s ease-in-out;
 }
-input:checked + .menu nav {
+input.button_animation:checked + .menu nav {
   display: block;
 }
 
