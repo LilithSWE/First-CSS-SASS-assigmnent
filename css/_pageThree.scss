@@ -2,7 +2,7 @@
   1024
   1280*/
 
-.page3_container{
+.page3_container {
   border-top: 10px solid white;
   background-color: $greenColor;
   grid-column: span 2;
@@ -16,11 +16,11 @@
 }
 
 
-.contact_form{
+.contact_form {
   height: auto;
   width: 100%;
 }
-.contact_form form fieldset{
+.contact_form form fieldset {
   height: auto;
   width: auto;
   font-size: 2rem;
@@ -31,10 +31,10 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.contact_form form fieldset h2{
+.contact_form form fieldset h2 {
   margin-block-end: 0;
 }
-.contact_form form fieldset label{
+.contact_form form fieldset label {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: start;
@@ -42,32 +42,32 @@
   text-align: start;
   padding-bottom: 1rem;
 }
-.contact_form form fieldset label input{
+.contact_form form fieldset label input {
   height: auto;
   width: 20rem;
   border: none;
   border-radius: 15px;
   display: block;
 }
-.contact_form_buttons{
+.contact_form_buttons {
   width: 100%;
   padding-top: 2rem;
 }
-.reset, .request{
+.reset, .request {
   background-color: rgb(49, 33, 13);
   width: 47%;
   border: none;
   border-radius: 15px;
   margin: 5px;
 }
-.reset{
+.reset {
   background-color: $purpleColor;
 }
-.request{
+.request {
   background-color: $yellowColor;
 }
 
-.contact_info_container{
+.contact_info_container {
   width: 33rem;
   height: 33rem;
   position: relative;
@@ -76,7 +76,7 @@
   justify-content: center;
 }
 
-.contact_info_background{
+.contact_info_background {
   background-image: url(/assets/photos/Mobile/table_mobile.webp);
   background-attachment: scroll;
   background-position: center;
@@ -87,7 +87,7 @@
   position: absolute;
 
 }
-.contact_info_text{
+.contact_info_text {
   color: $blueColor;
   text-shadow: -3px -3px 0px black;
   z-index: 2;
@@ -99,7 +99,7 @@
   align-items: center;
   justify-items: start;
 }
-.contact_info_container figure{
+.contact_info_container figure {
   margin-inline-start: 40px;
 }
 
@@ -112,18 +112,18 @@
 }
 
 
-.pop_up{
+.pop_up {
   width: 100%;
   height: auto;
   background-color: $purpleColor;
   margin-top: 20px;
 }
-.pop_up p{
+.pop_up p {
   margin-block-end: 0;
   font-size: 1.2rem;
   color: white;
 }
-.pop_up button{
+.pop_up button {
   width: 30%;
   border-radius: 15px;
   border:none;
@@ -131,9 +131,9 @@
   height: auto;
   font-size: 2rem;
 }
-.decline_button{
+.decline_button {
   background-color: $yellowColor;
 }
-.accept_button{
+.accept_button {
   background-color: $greenColor;
 }

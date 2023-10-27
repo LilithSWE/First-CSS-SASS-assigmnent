@@ -1,7 +1,7 @@
 /* 640
   1024
   1280*/
-.page1_container{
+.page1_container {
   border-top: 25px solid $yellowColor;
   grid-column: span 2;
   grid-row: 2 / span 1;
@@ -16,7 +16,7 @@
 }
 
 
-.page1_headline{
+.page1_headline {
   font-weight: 400;
   display: block;
   height: 200px;
@@ -25,14 +25,14 @@
   z-index: 0;
   margin: 0;
 }
-.tahini{
+.tahini {
  font-size: 5rem;
  z-index: 2;
  color: $greenColor;
  font-weight: 500;
  position: relative;
 }
-.chickpeas{
+.chickpeas {
  font-size: 2rem;
  z-index: 0;
  color: $yellowColor;
@@ -40,7 +40,7 @@
  top: 95px;
  left: 115px;
 }
-.drizzle{
+.drizzle {
   font-size: 2rem;
   color: $purpleColor;
   position: absolute;
@@ -49,12 +49,12 @@
 }
 
 
-.page1_top_text{
+.page1_top_text {
   width: 100vw;
   height: auto;
   line-height: 2rem;
 }
-.page1_top_text p{ 
+.page1_top_text p { 
   padding: 1rem;
   font-size: 1.4rem;
   font-weight: 500;
@@ -62,16 +62,16 @@
 }
 
 
-.container_img_arrow {   //FORTSÄTT HÄR! 
+.container_img_arrow {   
   display: block;
   position:relative;
 }
-.sallad{
+.sallad {
  height: auto;
  width: 100%;
  object-fit: contain;
 }
-.white_arrow{
+.white_arrow {
   height: 30px;
   width: 30px;
   transform: rotate(90deg);
@@ -80,11 +80,11 @@
   bottom: 20px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.white_arrow:hover{ //Funkar inte pga menyn ligger över. Måste fixas. 
+.white_arrow:hover {  
   bottom:10px;
 }
 
-.page1_bottom_part{
+.page1_bottom_part {
   background-color: white;
   color: $purpleColor;
   padding: 1rem;
@@ -98,11 +98,11 @@
   width: 100%;
 }
 
-.page1_bottom_part p{
+.page1_bottom_part p {
   padding: 10px;
 }
 
-.explore{
+.explore {
   color: black;
   padding: 10px;
   font-size: 1.4rem;
@@ -110,7 +110,7 @@
   width: 40vw;
 }
 
-.black_arrow{
+.black_arrow {
   height: 25px;
   width: 25px;
   transform: rotate(90deg);

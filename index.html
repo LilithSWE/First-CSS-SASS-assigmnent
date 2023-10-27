@@ -28,8 +28,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tough Cookie</title>
-
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +44,7 @@
     <div class="menu">
 
       <div class="heading_container">
-        <h1>TOUGH COOKIE</h1> 
+        <h1><span class="capitalize">Tough Cookie</span></h1> 
           <button class="nav_button">
            <span> </span>
            <span> </span>
@@ -56,9 +54,9 @@
       
       <nav>
         <ul>
-          <li><a>HOME</a></li>
-          <li><a>MENU</a></li>
-          <li><a>BOOK TABLE</a></li>
+          <li><a><span class="capitalize">home</span></a></li>
+          <li><a><span class="capitalize">menu</span></a></li>
+          <li><a><span class="capitalize">book table</span></a></li>
         </ul>
       </nav> 
     </div>
@@ -67,9 +65,9 @@
       <!--PAGE 1-->
       <div  class="page1_container">
     <div class="page1_headline">
-      <h2 class="tahini">TAHINI</h2>
-      <p class="chickpeas">CHICKPEAS</p>        
-      <p class="drizzle">DRIZZLE</p>
+      <h2 class="tahini"><span class="capitalize">tahini</span></h2>
+      <p class="chickpeas"><span class="capitalize">chickpeas</span></p>        
+      <p class="drizzle"><span class="capitalize">drizzle</span></p>
     </div>
 
      <div class="page1_top_text">
@@ -94,6 +92,9 @@
         </figure>
         <figure> 
           <img class="white_arrow" src="assets/icons/arrow.svg"
+          alt="white arrow"
+          height="auto"
+          width="100%"
           loading="lazy"> 
         </figure>
       </div> 
@@ -106,7 +107,7 @@
             samosa walnut mushroom tart.
         </p>
         <div class="explore">
-          <a href="#page2">EXPLORE MENU</a> <!-- OBS header kommer täcka lite pga fixed position -->
+          <a href="#page2"><span class="capitalize">explore menu</span</a> <!-- OBS header kommer täcka lite pga fixed position -->
           <img class="black_arrow" src="assets/icons/arrow2.svg" height="100%" width="100%"
           loading="lazy">
         </div> 
@@ -151,37 +152,37 @@
       
       <section class="page2_menu">
         <article>
-          <h3>HALLOUMI MOKLIEH <span class="new">NEW!</span></h3>
+          <h3><span class="capitalize">halloumi moklieh </span><span class="new">NEW!</span></h3>
           <p>Deep-fried halloumi</p>
           <h3 class="price">195 kr</h3>
         </article>
         <article>
-          <h3>MOJADDARA</h3>
+          <h3><span class="capitalize">mojaddara </span></h3>
           <p>Green lentis with rice and fried onion</p>
           <h3 class="price">135 kr</h3>
         </article>
         <article>
-          <h3>CHIAR & LABAN</h3>
+          <h3><span class="capitalize">chiar & laban </span></h3>
           <p>Lebanese spicy yoghurt with chopped cucumber</p>
           <h3 class="price">95 kr</h3>
         </article>
         <article>
-          <h3>WARAK INAB</h3>
+          <h3><span class="capitalize">warak inab </span></h3>
           <p>Rice- and veggie-filled dolma with mint and lemon</p>
           <h3 class="price">85 kr</h3>
         </article>
         <article>
-          <h3>MOUTABBAL BATINZIAN <span class="vegan">VEGAN</span></h3>
+          <h3><span class="capitalize">moutabbal batinzian </span><span class="vegan">VEGAN</span></h3>
           <p>Smoked chopped aubergine, sesame paste, garlic and lemon</p>
           <h3 class="price">175 kr</h3>
         </article>
         <article>
-          <h3>ARDISHOKI <span class="popular">POPULAR</span></h3>
+          <h3><span class="capitalize">ardishoki </span><span class="popular">POPULAR</span></h3>
           <p>Artichoke with lemon and garlic marinade</p>
           <h3 class="price">99 kr</h3>
         </article>
         <article>
-          <h3>MHAMARA</h3>
+          <h3><span class="capitalize">mhamara </span></h3>
           <p>Spicy bell pepper relish with crushed walnuts and pomegranate syryp</p>
           <h3 class="price">123 kr</h3>
         </article>
@@ -193,23 +194,23 @@
       <section class="contact_form">
         <form action="www.example.com/contact">
           <fieldset>
-            <legend><h2>BOOK YOUR TABLE</h2></legend>
-            <label>NAME
+            <legend><h2><span class="capitalize">book your table</span></h2></legend>
+            <label><span class="capitalize">name</span>
               <input type="text" name="name" size="15">
             </label>
-            <label>E-MAIL
+            <label><span class="capitalize">e-mail</span>
               <input type="email" name="email" size="15">
             </label>            
-            <label>PHONE
+            <label><span class="capitalize">phone</span>
               <input type="tel" name="telephone" size="15">
             </label>
-            <label>DATE
+            <label><span class="capitalize">date</span>
               <input type="text" name="date" size="15">
             </label>
-            <label>PARTY SIZE
+            <label><span class="capitalize">party size</span>
               <input type="number" name="number" size="15">
             </label>
-            <label>ALLERGIES
+            <label><span class="capitalize">allergies</span>
               <input type="text" name="allergies" size="15">
             </label>
             <div class="contact_form_buttons">
