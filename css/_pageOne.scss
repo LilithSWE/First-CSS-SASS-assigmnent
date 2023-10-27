@@ -7,8 +7,8 @@
   grid-row: 2 / span 1;
   display: flex;
   flex-direction: column;
-  width: 1fr;
-  height: 1fr;
+  width: 100%;
+  height: auto;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -50,7 +50,7 @@
 
 
 .page1_top_text {
-  width: 100vw;
+  width: 100%;
   height: auto;
   line-height: 2rem;
 }
