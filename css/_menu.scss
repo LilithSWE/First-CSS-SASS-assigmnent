@@ -31,7 +31,7 @@ h1 {
 .button_animation {
   width: 40px;
   height: 40px;
-  opacity: 0;  
+  opacity: 0.5;  
   z-index: 10;
   position: fixed; 
   top: 15px;
@@ -96,6 +96,7 @@ input.button_animation:checked + .menu nav {
 .menu {
   grid-column: span 2;
   height: 100vh;
+  width: auto;
   display: inherit;
   position: relative;
 }
