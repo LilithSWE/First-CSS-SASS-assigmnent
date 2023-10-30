@@ -1,0 +1,13 @@
+input.button_animation:hover + .menu .heading_container button span:nth-child(1) {
+  right: 5px;
+}
+input.button_animation:hover + .menu .heading_container button span:nth-child(2) {
+  left: 5px;
+}
+input.button_animation:hover + .menu .heading_container button span:nth-child(3) {
+  right: 5px;
+}
+
+.white_arrow:hover {  
+  bottom:10px;
+}
