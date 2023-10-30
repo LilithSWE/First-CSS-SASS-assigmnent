@@ -9,12 +9,6 @@ Notes from Jenni - uppgift + från lektion, kvar att implementera:
 
 # Checklista 
 
-# Idag 
-1. Lägg all CSS som gjorts (minus reset) i en MOBIL parial [x]
-2. Ta ut hover effekterna och lägg i egen -> ska till desktop sen [x]
-3. Gör minst menyns CSS tablet [ ]
-
-
 # Tisdag: 
 1. Gör klart alla CSS för tablet [ ]
 2. Fixa HTML - länkar i drop down menyn + ARIA lables + se över semantik + META taggar  Commit! [ ]

@@ -1,0 +1,122 @@
+.container {
+  grid-template-columns: repeat(4, minmax(0,1fr));
+}
+
+/* MENU */
+h1 {
+  letter-spacing: 2.8dvw;
+  word-spacing: 0.5rem;
+  padding-left: 4rem;
+}
+.button_animation {
+  width: 50px;
+  height: 50px;
+}
+button.nav_button {
+  height: 50px;
+  width: 50px;
+}
+button span {
+  width: 40px;
+  height: 8px;
+} 
+input.button_animation:checked + .menu .heading_container button span{
+  top: 20px;
+}
+nav {
+  grid-column: span 4;
+}
+nav ul li {
+  color: #FFFFFF;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+/* PAGE 1 */
+.page1_container {
+  grid-column: span 4;
+  flex-direction: column;
+}
+.page1_headline {
+  height: 430px;
+  width: 600px;
+  padding-top: 50px;
+}
+.tahini {
+  font-size: 10rem;
+ }
+ .chickpeas {
+  font-size: 5rem;
+  top: 210px;
+ }
+ .drizzle {
+   font-size: 5rem;
+   top: 65px;
+   right: 115px;
+ }
+.page1_top_text p { 
+  padding: 2rem;
+  font-size: 2rem;
+}
+.white_arrow {
+  height: 60px;
+  width: 60px;
+  bottom: 20px;
+}
+.page1_bottom_part {
+  font-size: 2rem;
+}
+
+.explore {
+  font-size: 2rem;
+}
+
+.black_arrow {
+  height: 35px;
+  width: 35px;
+}
+
+/* PAGE 2 */
+
+.page2_container {
+  grid-column: span 4;
+}
+.menu_images {
+gap: 10px;
+}
+.page2_menu {
+margin-bottom: 30px;
+gap: 8px;
+}
+.page2_menu article p {
+  font-size: 1.5rem;
+}
+
+
+/* FORTSÄTT HÄR!!  */
+
+
+.new, .vegan, .popular {
+
+}
+
+
+
+.new { 
+
+}
+
+
+
+.vegan {
+
+span {
+  
+}
+}
+
+
+
+
+.popular {
+}

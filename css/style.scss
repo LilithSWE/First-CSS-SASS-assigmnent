@@ -8,9 +8,13 @@
 }
 
 @media only screen and (min-width: 1025px) {
-  @import "hover";
+
   .container {
     grid-template-columns: repeat(12, minmax(0,1fr));
     height: 300vh;
   }
 } 
+
+@media (hover: hover) { 
+  @import "hover";
+}

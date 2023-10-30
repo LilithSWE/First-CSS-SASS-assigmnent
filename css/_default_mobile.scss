@@ -19,6 +19,11 @@ span.capitalize {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none; 
+  color: black;
+}
+
 /* MENU */
 
 .heading_container {
@@ -26,15 +31,13 @@ span.capitalize {
   top: 0;
   left:0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   background-color: black;
   grid-column: span 2;
   grid-row: 1;
   display: grid;
   z-index: 8;
   grid-template-columns: 80% 20%;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 h1 {
@@ -205,8 +208,6 @@ nav ul li {
   position: relative;
 }
 .sallad {
- height: auto;
- width: 100%;
  object-fit: contain;
 }
 .white_arrow {
@@ -237,15 +238,12 @@ nav ul li {
 .page1_bottom_part p {
   padding: 10px;
 }
-
 .explore {
-  color: black;
   padding: 10px;
   font-size: 1.4rem;
   font-weight: 500;
   width: 40vw;
 }
-
 .black_arrow {
   height: 25px;
   width: 25px;
@@ -254,8 +252,9 @@ nav ul li {
   bottom: -5px;
 }
 
-/* PAGE 2 */
 
+
+/* PAGE 2 */
 .page2_container {
   background-color: $yellowColor;
   grid-column: span 2;
@@ -273,21 +272,19 @@ nav ul li {
 
 .menu_images {
 display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
+gap: 4px;
 align-items: center;
 height: max-content;
-padding: 10px;
-padding-bottom: 0;
-margin-bottom: 0;
+padding-right: 10px;
+padding-left: 10px;
+margin-top: 20px;
 }
 
-figure {
+.menu_images figure {
 margin-block: 5px;
 margin-inline: 5px;
 height: 80%;
 width: 100%;
-display: flex;
 }
 
 .menu_images figure img {
@@ -300,14 +297,14 @@ object-fit: cover;
 .page2_menu {
 display: flex;
 flex-direction: column;  
-margin-top: 0;
 padding: 10px;
 gap: 5px;
+padding: 4px;
 }
 
 .page2_menu article {
 display: grid;
-grid-template-columns: 40% 1fr 15%;
+grid-template-columns: 1fr 1.5fr 15%;
 background-color: white;
 border-top: 2px solid black;
 border-bottom: 2px solid black;
@@ -318,7 +315,7 @@ align-items: center;
 }
 
 .page2_menu article h3 {
-font-size: 1,5rem;
+font-size: 1.5rem;
 padding-left: 10px;
 margin-right: 5px;
 }
@@ -327,34 +324,38 @@ font-size: 1rem;
 }
 
 .price {
-padding-left: 0;
-margin-right: 0;
+text-align: end;
+padding-right: 10px;
 }
 
 .new, .vegan, .popular {
 font-size: 1rem;
+padding: 1px;
 display: inline-block;
-width: fit-content;
+height: 1.2rem;
+width: 5rem;
+text-align: center;
+font-family: serif;
+font-weight: 500;
 }
+
+/* MÅSTE FÅ ATT TAGGARNA I MENYN ÄR CENTRERADE I MITTEN AV RADEN */
 
 .new { 
 background-color: $purpleColor;
-padding: 2px 4px;
 }
 
 .vegan {
 background-color: $greenColor;
-padding: 2px 4px;
 transform: rotate(-3deg);
 span {
-  display: block;
-  transform: rotate(3deg);
+  display: inline-block;
+  transform: rotate(60deg);  /* FUNGERAR EJ!! */
 }
 }
 
 .popular {
 background-color: $yellowColor;
-padding: 2px 4px;
 }
 
 /* PAGE 3 */
