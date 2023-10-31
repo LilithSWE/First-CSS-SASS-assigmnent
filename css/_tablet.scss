@@ -26,10 +26,10 @@ input.button_animation:checked + .menu .heading_container button span{
 nav {
   grid-column: span 4;
 }
-nav ul li {
+nav ul li a{
   color: #FFFFFF;
-  font-size: 4rem;
-  padding: 2rem;
+  font-size: 5em;
+  line-height: 10rem;
 }
 
 /* PAGE 1 */
@@ -77,7 +77,6 @@ nav ul li {
 }
 
 /* PAGE 2 */
-
 .page2_container {
   grid-column: span 4;
 }
@@ -85,38 +84,52 @@ nav ul li {
 gap: 10px;
 }
 .page2_menu {
-margin-bottom: 30px;
 gap: 8px;
 }
+.page2_menu article h3 {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+.page2_menu article div h3 {
+  font-size: 1.8rem;
+}
 .page2_menu article p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
-
-/* FORTSÄTT HÄR!!  */
-
-
-.new, .vegan, .popular {
-
-}
-
-
-
-.new { 
-
-}
-
-
-
-.vegan {
-
-span {
-  
-}
-}
-
-
-
-
-.popular {
-}
+/* PAGE 3 */
+.page3_container {
+  grid-column: span 4;
+  }
+  .contact_form form fieldset {
+  font-size: 3rem;
+  padding-top: 4rem;
+  }
+  .contact_form form fieldset label {
+  gap: 10px;
+  }
+  .contact_form form fieldset label input {
+  width: 25rem;
+  }
+  .contact_info_background {
+  width: 600px;
+  height: 600px;
+  }
+  .contact_info_text {
+  font-size: 2.8rem;
+  max-width: 80%;
+  }
+  .contact_info_icon { 
+  width: 5rem;
+  }
+  .pop_up {
+    grid-column: span 4;
+    }
+  .pop_up p {
+  font-size: 2rem;
+  margin-top: 20px;
+  }
+  .pop_up button {
+  width: 40%;
+  font-size: 2.5rem;
+  }

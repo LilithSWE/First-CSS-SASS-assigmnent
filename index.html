@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!--
-    <meta property="og:title" content="XXXX">
-    <meta property="og:description" content="XXXX">
-    <meta property="og:type" content="text">
-    <meta property="og:url" content="XXXXXX">
 
-    <meta property="og:image" content="XXXXX">
-    <meta property="og:image:type" content="image/XXX">
-    <meta property="og:image:width" content="XXX">
-    <meta property="og:image:height" content="XXX">
-    <meta property="og:image:alt" content="XXXXXXXXX"> 
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1."> 
-    <meta name="description" content="XXXXXXXX">
-
+  <!--
     <script type="application/ld+json">
         {
         "@context": "https://schema.org/",
         "@type": "XXX",
         "image": "XXXXX"
         }
-    </script>
-
-----------------------
-<meta property="og:title" content="How to Become an SEO Expert (8 Steps)" />
-<meta property="og:description" content="Get from SEO newbie to SEO pro in 8 simple steps." />
-<meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" />
-<meta charset="utf-8"> <- åäö blir korrekta
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fafafa">
-
-
+    </script>            ??????????
     -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tough Cookie</title>
+  <meta name="theme-color" content="#fafafa">
+  <meta property="og:title" content="Tough Cookie" />
+  <meta property="og:description" content="Restaurant Tough Cookie" />
+
+<!--   <meta property="og:type" content="text">
+  <meta property="og:url" content="XXXXXX">
+
+  <meta property="og:image" content="XXXXX">
+  <meta property="og:image:type" content="image/XXX">
+  <meta property="og:image:width" content="XXX">
+  <meta property="og:image:height" content="XXX">
+  <meta property="og:image:alt" content="XXXXXXXXX"> -->
+
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,8 +58,7 @@
           <li><a><span class="capitalize">book table</span></a></li>
         </ul>
       </nav> 
-    </div>
-           
+    </div>          
     <div  class="page1_container">
       <div class="page1_headline">
         <h2 class="tahini"><span class="capitalize">tahini</span></h2>
@@ -122,7 +111,6 @@
         </div> 
       </div>
     </div>     
-
     <div id="page2" class="page2_container">
       <section class="menu_images">
         <figure>
@@ -155,11 +143,13 @@
           alt="Three white bowls continging chickpeas, yoghurt and a green dip"
           loading="lazy">
         </figure>
-      </section>
-      
+      </section>     
       <section class="page2_menu">
         <article>
-          <h3><span class="capitalize">halloumi moklieh </span><span class="new">NEW!</span></h3>
+          <div>
+            <h3><span class="capitalize">halloumi moklieh </span></h3>
+            <p class="new"><span class="capitalize">new!</span></p>
+          </div>
           <p>Deep-fried halloumi</p>
           <h3 class="price">195 kr</h3>
         </article>
@@ -179,12 +169,18 @@
           <h3 class="price">85 kr</h3>
         </article>
         <article>
-          <h3><span class="capitalize">moutabbal batinzian </span><span class="vegan">VEGAN</span></h3>
+          <div>
+            <h3><span class="capitalize">moutabbal batinzian </span></h3>
+            <p class="vegan"><span class="capitalize">vegan</span></p>
+          </div>
           <p>Smoked chopped aubergine, sesame paste, garlic and lemon</p>
           <h3 class="price">175 kr</h3>
         </article>
         <article>
-          <h3><span class="capitalize">ardishoki </span><span class="popular">POPULAR</span></h3>
+          <div>
+            <h3><span class="capitalize">ardishoki </span></h3>
+            <p class="popular"><span class="capitalize">popular</span></p>
+          </div>         
           <p>Artichoke with lemon and garlic marinade</p>
           <h3 class="price">99 kr</h3>
         </article>
@@ -195,29 +191,28 @@
         </article>
       </section>
     </div> 
-
-     <div class="page3_container">
+    <div class="page3_container">
       <section class="contact_form">
         <form action="www.example.com/contact">
           <fieldset>
             <legend><h2><span class="capitalize">book your table</span></h2></legend>
             <label><span class="capitalize">name</span>
-              <input type="text" name="name">
+              <input type="text" name="name" placeholder="John Smith">
             </label>
             <label><span class="capitalize">e-mail</span>
-              <input type="email" name="email">
+              <input type="email" name="email" placeholder="j.smith@gmail.com">
             </label>            
             <label><span class="capitalize">phone</span>
-              <input type="tel" name="telephone">
+              <input type="tel" name="telephone" placeholder="070 123 45 67">
             </label>
             <label><span class="capitalize">date</span>
               <input type="date" name="date">
             </label>
             <label><span class="capitalize">party size</span>
-              <input type="number" name="number">
+              <input type="number" name="number" placeholder="2">
             </label>
             <label><span class="capitalize">allergies</span>
-              <input type="text" name="allergies">
+              <input type="text" name="allergies" placeholder="allergies">
             </label>
             <div class="contact_form_buttons">
               <input class="reset" type="reset" name="reset" value="CANCEL">
@@ -248,7 +243,7 @@
             width="40">
           </figure>
           <p>book@toughcookie.com</p>
-          <figure>
+          <figure class="contact_figure">
             <img class="contact_info_icon"
             src="assets/icons/geotag.svg"
             alt="A blue geotag icon"
@@ -259,14 +254,12 @@
         </div>
 
       </div>
-
-      <div class="pop_up">
-        <p>You should accept cookies.</p>
-        <button class="decline_button">DECLINE</button>
-        <button class="accept_button">ACCEPT</button>
-      </div>
-
     </div> 
+    <div class="pop_up">
+      <p>You should accept cookies.</p>
+      <button class="decline_button">DECLINE</button>
+      <button class="accept_button">ACCEPT</button>
+    </div>
   </div> 
 </body>
 </html>
