@@ -1,6 +1,7 @@
 
 /* MAJOR ELEMENTS */
 body {
+  min-width: 400px;
   background-color: black;
   font-family: 'Jockey One', 'Roboto Condensed', serif;
   width: 100vw;
@@ -128,6 +129,7 @@ nav ul li a{
   font-size: 3rem;
   padding: 2rem;
   transition: all 0.4s;
+  line-height: 7rem;
 }
 
 /* PAGE 1 */
@@ -203,6 +205,10 @@ nav ul li a{
   bottom: 20px;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.sallad_info_scroll_placement {
+ position: absolute;
+ bottom: 80px;
+}
 .page1_bottom_part {
   background-color: white;
   border-top: 10px solid $yellowColor;
@@ -246,6 +252,7 @@ nav ul li a{
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
+  padding-top: 60px;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -360,6 +367,7 @@ display: flex;
 flex-grow: 1;
 flex-direction: column;
 width: 100%;
+padding-top: 60px;
 justify-content: center;
 justify-items: center;
 align-items: center;  

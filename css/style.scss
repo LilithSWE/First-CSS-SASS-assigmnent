@@ -1,16 +1,12 @@
 @import "normalize";
 @import "variables";
-
 @media (hover: hover) { 
   @import "hover";
 }
-
 @import "default_mobile";
-
 @media only screen and (max-width: 1024px) and (min-width: 641px) {
   @import "tablet";
 }
-
 @media only screen and (min-width: 1025px) {
   @import "desktop";
 } 

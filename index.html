@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!--
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org/",
-        "@type": "XXX",
-        "image": "XXXXX"
-        }
-    </script>            ??????????
-    -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://medieinstitutet.github.io/fed23d-html-css-inlamningsuppgift-2-LilithSWE/",
+    "name": "Tough Cookie",
+    "description": "Restaurant"
+    }
+</script>      
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tough Cookie</title>
   <meta name="theme-color" content="#fafafa">
-  <meta property="og:title" content="Tough Cookie" />
-  <meta property="og:description" content="Restaurant Tough Cookie" />
+  <meta property="og:title" content="Tough Cookie">
+  <meta property="og:description" content="Restaurant Tough Cookie">
 
-<!--   <meta property="og:type" content="text">
-  <meta property="og:url" content="XXXXXX">
+  <meta property="og:type" content="text">
+  <meta property="og:url" content="https://medieinstitutet.github.io/fed23d-html-css-inlamningsuppgift-2-LilithSWE/">
 
-  <meta property="og:image" content="XXXXX">
-  <meta property="og:image:type" content="image/XXX">
-  <meta property="og:image:width" content="XXX">
-  <meta property="og:image:height" content="XXX">
-  <meta property="og:image:alt" content="XXXXXXXXX"> -->
+  <meta property="og:image" content="https://toughcookie.com/assets/photos/Mobile/table_mobile.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="960">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Restaurant Tough Cookies interior. White table with table settings for four, wine glases and menues."> 
 
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Minimum view with atm, 395px before shit hits the fan -->
-
+  <title>Tough Cookie</title>
 </head>
 
 <body>
-  <div class="container"> 
+  <div id="container"  class="container"> 
     <input class="button_animation" type="checkbox"> 
     <div class="menu">
-
       <div class="heading_container">
         <h1><span class="capitalize">Tough Cookie</span></h1> 
           <button class="nav_button">
@@ -49,17 +44,16 @@
            <span> </span>
            <span> </span>
           </button> 
-      </div>
-      
+      </div>  
       <nav>
         <ul>
-          <li><a><span class="capitalize">home</span></a></li>
-          <li><a><span class="capitalize">menu</span></a></li>
-          <li><a><span class="capitalize">book table</span></a></li>
+          <li><a href="#container"><span class="capitalize">home</span></a></li>
+          <li><a href="#page2"><span class="capitalize">menu</span></a></li>
+          <li><a href="#page3"><span class="capitalize">book table</span></a></li>
         </ul>
       </nav> 
     </div>          
-    <div  class="page1_container">
+    <div class="page1_container">
       <div class="page1_headline">
         <h2 class="tahini"><span class="capitalize">tahini</span></h2>
         <p class="chickpeas"><span class="capitalize">chickpeas</span></p>        
@@ -87,11 +81,12 @@
             loading="lazy">
         </figure>
         <figure> 
-          <img class="white_arrow" src="assets/icons/arrow.svg"
-          alt="white arrow"
-          width="40"
-          loading="lazy"> 
+          <a href="#sallad_info"><img class="white_arrow" src="assets/icons/arrow.svg"
+            alt="white arrow"
+            width="40"
+            loading="lazy"> </a>
         </figure>
+        <div id="sallad_info" class="sallad_info_scroll_placement"></div>
       </div> 
   
       <div class="page1_bottom_part">  
@@ -191,7 +186,7 @@
         </article>
       </section>
     </div> 
-    <div class="page3_container">
+    <div id="page3" class="page3_container">
       <section class="contact_form">
         <form action="www.example.com/contact">
           <fieldset>
@@ -218,8 +213,7 @@
               <input class="reset" type="reset" name="reset" value="CANCEL">
               <input  class="request" type="submit" name="send" value="REQUEST">
             </div>
-            
-            </fieldset>
+          </fieldset>
         </form>
       </section>
       <div class="contact_info_container">
