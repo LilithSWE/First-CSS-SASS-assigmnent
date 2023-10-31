@@ -26,11 +26,6 @@ input.button_animation:checked + .menu .heading_container button span{
 nav {
   grid-column: span 4;
 }
-nav ul li a{
-  color: #FFFFFF;
-  font-size: 5em;
-  line-height: 10rem;
-}
 
 /* PAGE 1 */
 .page1_container {
@@ -56,21 +51,12 @@ nav ul li a{
  }
 .page1_top_text p { 
   padding: 2rem;
-  font-size: 2rem;
 }
 .white_arrow {
   height: 60px;
   width: 60px;
   bottom: 20px;
 }
-.page1_bottom_part {
-  font-size: 2rem;
-}
-
-.explore {
-  font-size: 2rem;
-}
-
 .black_arrow {
   height: 35px;
   width: 35px;
@@ -86,50 +72,24 @@ gap: 10px;
 .page2_menu {
 gap: 8px;
 }
-.page2_menu article h3 {
-  font-size: 1.8rem;
-  margin-right: 8px;
-}
-.page2_menu article div h3 {
-  font-size: 1.8rem;
-}
-.page2_menu article p {
-  font-size: 1.6rem;
-}
 
 /* PAGE 3 */
 .page3_container {
   grid-column: span 4;
   }
-  .contact_form form fieldset {
-  font-size: 3rem;
-  padding-top: 4rem;
-  }
   .contact_form form fieldset label {
   gap: 10px;
-  }
-  .contact_form form fieldset label input {
-  width: 25rem;
   }
   .contact_info_background {
   width: 600px;
   height: 600px;
   }
   .contact_info_text {
-  font-size: 2.8rem;
-  max-width: 80%;
+  font-size: 3rem;
   }
   .contact_info_icon { 
   width: 5rem;
   }
   .pop_up {
-    grid-column: span 4;
-    }
-  .pop_up p {
-  font-size: 2rem;
-  margin-top: 20px;
-  }
-  .pop_up button {
-  width: 40%;
-  font-size: 2.5rem;
+  grid-column: span 4;
   }
