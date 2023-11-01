@@ -9,17 +9,11 @@ Notes from Jenni - uppgift + från lektion, kvar att implementera:
 
 # Checklista 
 
-# Tisdag: 
-1. Gör klart alla CSS för tablet [ ]
-2. Fixa HTML - länkar i drop down menyn + ARIA lables + se över semantik + META taggar  Commit! [ ]
-3. Gör meny för desktop [ ]
-
-
 # Onsdag: 
-1. Gör klart all CSS för desktop. Glöm inte lägga in alla hover effekter [ ]
-    Glöm inte ändra opcity på INPUT!
-2. Validera igen, skapa PDF för inlämning  [ ]
-3. Screenshots, alla MQ storlekar, alla browsers (Chrome + Edge + Firefox + -Safari- + Brave).  Mobile [ ]  [ ]  [ ]  [ ] /  Tablet [ ]  [ ]  [ ]  [ ] / Desktop [ ]  [ ]  [ ]  [ ]  
+1. Gör klart all CSS för desktop.[ ]
+2. Se över HTML = <title>, semantik, ARIA, tabindex. 
+3. Validera igen, skapa PDF för inlämning om OK [ ]
+4. Screenshots, alla MQ storlekar, alla browsers (Chrome + Edge + Firefox + -Safari- + Brave).  Mobile [ ]  [ ]  [ ]  [ ] /  Tablet [ ]  [ ]  [ ]  [ ] / Desktop [ ]  [ ]  [ ]  [ ]  
 4. Tillgänglighetsanalys - Lighthouse. Screenshot not needed men lika bra att fixa!  [ ]
 
 
@@ -35,8 +29,8 @@ Notes from Jenni - uppgift + från lektion, kvar att implementera:
 * Lägg upp i It'sLearning   [ ]
 
 
-# Fredag -> kl 16:
-* Backup dag!
+# Fredag, Lördag, Söndag-> kl 16:
+* Backup dagar!
  --Incase of madness, break the glass; --
 -- Take a frosk, coffee and some ADHD medication and get your shit together girl!--
 

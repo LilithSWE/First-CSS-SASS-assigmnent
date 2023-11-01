@@ -39,16 +39,17 @@ nav {
 }
 .tahini {
   font-size: 10rem;
- }
- .chickpeas {
-  font-size: 5rem;
-  top: 210px;
- }
- .drizzle {
-   font-size: 5rem;
-   top: 65px;
+}
+.chickpeas {
+  font-size: 4rem;
+  top: 240px;
+  left: 132px;
+}
+.drizzle {
+   font-size: 4rem;
+   top: 95px;
    right: 115px;
- }
+}
 .page1_top_text p { 
   padding: 2rem;
 }
@@ -76,20 +77,10 @@ gap: 8px;
 /* PAGE 3 */
 .page3_container {
   grid-column: span 4;
-  }
-  .contact_form form fieldset label {
+}
+.contact_form form fieldset label {
   gap: 10px;
-  }
-  .contact_info_background {
-  width: 600px;
-  height: 600px;
-  }
-  .contact_info_text {
-  font-size: 3rem;
-  }
-  .contact_info_icon { 
-  width: 5rem;
-  }
-  .pop_up {
+}
+.pop_up {
   grid-column: span 4;
-  }
+}
