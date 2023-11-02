@@ -1,54 +1,57 @@
 .container {
-  grid-template-columns: repeat(12, minmax(0,1fr));
-  grid-template-rows: repeat(1, 100vh);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 100vh;
   gap: 1vw;
   background-color: $yellowColor;
-  margin-left: 1vw;
-  padding-right: 1vw;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
 }
-
 /* MENU */
 .heading_container {
   grid-column: 1/ span 1;
   grid-row: 1/ span 2;
   position: sticky;
   background-color: black;
-  display: flex;
+  grid-template-rows: 8% 92%;
+  grid-template-columns: 1fr;
   height: 100vh;
-  justify-content: center;
-  min-height: 930px;
-  }
+  max-width: 100%;
+  justify-items: center;
+  min-height: 835px;
+}
 h1 {
   letter-spacing: 2.8dvw;
   word-spacing: 0.5rem;
   padding: 0;
+  grid-row: 2;
   text-orientation: upright;
   writing-mode: vertical-lr;
-  font-size: 3.2rem;
-  letter-spacing: -0.2rem;
+  font-size: 2.9rem;
+  letter-spacing: 0;
   word-spacing: 0rem;
 }
 .button_animation {
-  width: 5vw;
-  height: 4vw;
-  left: 1.4vw;
-  top: 2vh;
+  width: 4.2vw;
+  height: 4.2vw;
+  left: 1.6vw;
+  top: 1.8vh;
+  position: fixed;
 }
 button.nav_button {
-  width: 5vw;
+  width: 4vw;
   height: 4vw;
-  left: 1.4vw;
+  left: 1.8vw;
   top: 2vh;
   margin: 0;
   position: absolute;
 }
 button span {
   width: 100%;
-  height: 0.5vw;
+  height: 5px;
   border-radius: 1rem;
   margin-bottom: 0.5rem;
   position: relative;
+  align-self: center;
 } 
 input.button_animation:checked + .menu .heading_container button span{
   top: 2vw;
@@ -62,18 +65,19 @@ nav {
   grid-row: 1;
   padding-left: 10vw;
 } 
-
 /* PAGE 1 */
 .page1_container {
   grid-column: 2 / 13;
-  grid-row: 1;
+  grid-row: 1 / span 1;
   display: grid;
   border-top: 0;
   background-color: black;
-  grid-template-columns: repeat(11, minmax(0,1fr));
+  grid-template-columns: repeat(11, minmax(0, 1fr));
   grid-template-rows: repeat(2, 1fr);
   gap: 1vw;
   position: relative;
+  height: 100vh;
+  width: 100%;
 }
 .page1_headline {
   height: 400px;
@@ -89,10 +93,10 @@ nav {
   top: 210px;
   left: 20px;
 }
- .drizzle {
-   font-size: 3rem;
-   top: 90px;
-   right: 0px;
+.drizzle {
+  font-size: 3rem;
+  top: 90px;
+  right: 0px;
 }
 .page1_top_text { 
   grid-column: 5 / span 7;
@@ -135,7 +139,7 @@ bottom: 0px;
   grid-row: 2 / span 1;
   text-align: start;
   border-top: 0;
-  border-left: 1vw solid $yellowColor;
+  border-left: 1v16px solid $yellowColor;
   height: 100%;
   margin-left: -1vw;
   overflow: hidden;
@@ -144,19 +148,17 @@ bottom: 0px;
   padding: 0;
 }
 .explore {
-padding: 0;
-font-size: clamp(1rem, 3vw, 3rem);
-position: absolute;
-bottom: 5px;
-left: 16px;
+  padding: 0;
+  font-size: clamp(1rem, 3vw, 3rem);
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
 }
 .black_arrow {
   height: 2.5vw;
   width: 2.5vw;
   transform: none;
 }
-
-
 /* PAGE 2 */
 .page2_container {
   grid-column: 2 / 13;
@@ -165,41 +167,43 @@ left: 16px;
   grid-template-columns: repeat(11, minmax(0,1fr));
   grid-template-rows: 40% 60%;
   gap: 1vw;
-  height: fit-content;
+  height: 100vh;
   padding-top: 0;
-  border-top: 1vw solid $yellowColor;
-  border-bottom: 1vw solid $yellowColor;
+  border: 1vw solid $yellowColor;
+  margin:0;
 }
 .menu_images {
-grid-column: 1 / span 11;
-grid-row: 1;
-height: 40vh;
-width: 100%;
-display: grid;
-grid-template-columns: 1fr 1.5fr 1.5fr;
-grid-template-rows: 100%;
-gap: 12px;
-margin: 0;
-padding: 0;
-}
-.menu_images figure {
-  margin-block: 0px;
-  margin-inline: 0px;
+  grid-column: 1 / span 11;
+  grid-row: 1 / span 1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 34% 34%;
+  grid-template-rows: 100%;
+  gap: 1%;
+  align-items: center;  
 }
 .menu_images figure {
   margin-block: 0px;
   margin-inline: 0px;
   height: 100%;
-  }
+  width: 100%;
+}
+.menu_images figure img {
+  max-height: 100%;
+} 
 .page2_menu {
-gap: 8px;
-grid-column: 1 / span 11;
-grid-row: 2;
-height: 100%;
-width: 100%;
-margin: 0;
-padding: 0;
-margin-top: 2rem;
+  gap: 8px;
+  grid-column: 1 / span 11;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
 }
 .page2_menu article h3, .page2_menu article div h3 {
   font-size: clamp(1.5rem, 2.5vw, 8rem);
@@ -216,25 +220,114 @@ margin-top: 2rem;
   font-size: clamp(0.8rem, 0.8vw, 2rem);
   width: 5vw;
 }
-
 /* PAGE 3 */
 .page3_container {
-  grid-column: 2 / 13;
+  grid-column: 1 / 13;
   grid-row: 3;
   display: grid;
   border-top: 0;
-  grid-template-columns: repeat(11, minmax(0,1fr));
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(12, minmax(0,1fr));
+  grid-template-rows: 1fr;
   gap: 1vw;
-  height: fit-content;
   position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-color: white;
 }
-  .contact_form form fieldset label {
-  gap: 10px;
+.contact_form {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  background-color: $greenColor;
+  display: flex;
+  align-items: center;
 }
-  .pop_up {
-    grid-column: 1 / 13;
-    grid-row: 4;
-    z-index: 15;
+.contact_form form fieldset {
+  font-size: clamp(1.4rem, 2.5vw, 10rem);
+  padding-top: 1.5rem;
+  text-align: start;
+}
+.contact_form form fieldset label {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 1.2rem;
+}
+.contact_form form fieldset label input {
+  border-radius: 20px;
+  padding-inline-start: 20px;
+}
+.contact_form_buttons {
+  padding-top: 1rem;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.reset, .request {
+  width: 50%;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+.contact_info_container {
+  grid-column: 7 / span 6;
+  grid-row: 1;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  background-color: $greenColor;
+  width: 100%;
+  height: 100%;
+}
+.contact_info_background {
+  width: 85%;
+}
+.contact_info_text {
+  gap: 1.2rem;
+  width: 70%;
+  max-width: 70%;
+  font-size: clamp(1rem, 3vw, 10rem);
+  padding-top: 0;
+}
+.contact_figure {
+  justify-content: flex-end
+}
+.contact_info_icon { 
+  width: clamp(1rem, 5vw, 10rem);
+}
+.pop_up {
+  z-index: 15;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 100px;
+  align-items: center;
+  text-align: start;
+}
+.pop_up p {
+  font-size: clamp(1.5rem, 1vw, 8rem);
+  margin-top: 0;
+  grid-column: 2 / span 6;
+  grid-row: 1;
+  padding-left: 2vw;
+}
+.pop_up_buttons {
+  justify-content: center;
+  gap: 1vw;
+  grid-column: 8 / span 5;
+  grid-row: 1;
+  height: auto;
+}
+.pop_up_buttons button {
+  width: 40%;
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 8rem);
 }
 
