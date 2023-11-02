@@ -73,7 +73,7 @@ nav {
   border-top: 0;
   background-color: black;
   grid-template-columns: repeat(11, minmax(0, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 50% 50%;
   gap: 1vw;
   position: relative;
   height: 100vh;
@@ -109,18 +109,19 @@ nav {
   overflow: hidden;
 }
 .page1_top_text p { 
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 5rem);
   padding: 10px;
 }
 .container_img_arrow {   
   grid-column: 1 / span 5;
   grid-row: span 1;
-  width: auto;
+  width: 100%;
   height: 100%;
   display: flex;
   figure {
     margin: 0;
     height: 100%;
+    width: 100%;
     background-color: black;
   }
 }
@@ -134,12 +135,12 @@ nav {
 bottom: 0px;
 }
 .page1_bottom_part {
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 5rem);
   grid-column: 6/ span 6;
   grid-row: 2 / span 1;
   text-align: start;
   border-top: 0;
-  border-left: 1v16px solid $yellowColor;
+  border-left: 16px solid $yellowColor;
   height: 100%;
   margin-left: -1vw;
   overflow: hidden;
@@ -149,7 +150,7 @@ bottom: 0px;
 }
 .explore {
   padding: 0;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 2.5vw, 5rem);
   position: absolute;
   bottom: 5px;
   left: 16px;
@@ -168,15 +169,13 @@ bottom: 0px;
   grid-template-rows: 40% 60%;
   gap: 1vw;
   height: 100vh;
-  padding-top: 0;
-  border: 1vw solid $yellowColor;
+  padding: 1.5vw 1vw 1.5vw 0px;
   margin:0;
 }
 .menu_images {
   grid-column: 1 / span 11;
   grid-row: 1 / span 1;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
