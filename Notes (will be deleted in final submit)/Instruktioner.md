@@ -9,15 +9,15 @@ Notes from Jenni - uppgift + från lektion, kvar att implementera:
 
 # Checklista 
 
-# Onsdag: 
-1. Gör klart all CSS för desktop.[ ]
+# Torsdag: 
+1. Gör klart all CSS för desktop.[X]
 2. Se över HTML = <title>, semantik, ARIA, tabindex. 
 3. Validera igen, skapa PDF för inlämning om OK [ ]
 4. Screenshots, alla MQ storlekar, alla browsers (Chrome + Edge + Firefox + -Safari- + Brave).  Mobile [ ]  [ ]  [ ]  [ ] /  Tablet [ ]  [ ]  [ ]  [ ] / Desktop [ ]  [ ]  [ ]  [ ]  
 4. Tillgänglighetsanalys - Lighthouse. Screenshot not needed men lika bra att fixa!  [ ]
 
 
-# Torsdag: 
+# Fredag: 
 1. Redigera problem som ev. uppstod under gårdagens check.  [ ]
 2. Ta bort alla kommentarer i kod, ta bort onödiga ENTER slag i html.  [ ]
 3. Fortsätt med screenshots, alla MQ storlekar, alla browsers (Chrome + Edge + Firefox + -Safari- + Brave) .  [ ]
@@ -26,10 +26,10 @@ Notes from Jenni - uppgift + från lektion, kvar att implementera:
     -CSS validering?  [ ]
 
 * Pusha sista gång till GitHub  [ ]
-* Lägg upp i It'sLearning   [ ]
+* Lägg upp i It'sLearning innan 16! [ ]
 
 
-# Fredag, Lördag, Söndag-> kl 16:
+# Lördag, Söndag:
 * Backup dagar!
  --Incase of madness, break the glass; --
 -- Take a frosk, coffee and some ADHD medication and get your shit together girl!--
