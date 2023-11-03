@@ -26,7 +26,7 @@ h1 {
   grid-row: 2;
   text-orientation: upright;
   writing-mode: vertical-lr;
-  font-size: 2.9rem;
+  font-size: 3rem;
   letter-spacing: 0;
   word-spacing: 0rem;
 }
@@ -132,7 +132,7 @@ nav {
   left: 40px;
 }
 .sallad_info_scroll_placement {
-bottom: 0px;
+bottom: -16px;
 }
 .page1_bottom_part {
   font-size: clamp(1rem, 2.5vw, 5rem);
@@ -250,7 +250,7 @@ bottom: 0px;
 }
 .contact_form form fieldset label {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 10%;
   padding-bottom: 1.2rem;
 }
 .contact_form form fieldset label input {
@@ -263,6 +263,7 @@ bottom: 0px;
   flex-grow: 1;
   justify-content: space-between;
   gap: 1rem;
+  width: 90%;
 }
 .reset, .request {
   width: 50%;
@@ -284,6 +285,7 @@ bottom: 0px;
 }
 .contact_info_background {
   width: 85%;
+  background-image: url(/assets/photos/Desktop/table_desktop.webp);
 }
 .contact_info_text {
   gap: 1.2rem;
@@ -306,9 +308,10 @@ bottom: 0px;
   left: 0;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: 100px;
+  grid-template-rows: 7rem;
   align-items: center;
   text-align: start;
+  grid-column: span 12;
 }
 .pop_up p {
   font-size: clamp(1.5rem, 1vw, 8rem);

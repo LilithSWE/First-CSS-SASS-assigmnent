@@ -35,11 +35,15 @@
 
 <body>
   <div id="container"  class="container"> 
-    <input class="button_animation" type="checkbox"> 
+    <input 
+      class="button_animation" 
+      type="checkbox" 
+      tabindex="1"  
+      aria-label="menu button"> 
     <div class="menu">
       <div class="heading_container">
         <h1><span class="capitalize">Tough Cookie</span></h1> 
-          <button aria-label="menu button" class="nav_button">
+          <button class="nav_button" tabindex="-1">
            <span> </span>
            <span> </span>
            <span> </span>
@@ -82,7 +86,8 @@
             "
             src="assets/photos/Desktop/sallad_mobile.webp"
             alt="green sallad"
-            loading="lazy">
+            loading="lazy"
+            title="Photo by Mae Mu">
         </figure>
         <a href="#sallad_info"><img 
           class="white_arrow" 
@@ -91,8 +96,7 @@
           width="40"
           loading="lazy"></a>
         <div id="sallad_info" class="sallad_info_scroll_placement"></div>
-      </div> 
-  
+      </div>  
       <div class="page1_bottom_part">  
         <p>
             Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam 
@@ -126,7 +130,8 @@
               640px
             "
           alt="A blue bowl with assorted vegetables, bread, chickpeas and hummus"
-          loading="lazy">
+          loading="lazy"
+          title="Photo by Edgar Castrejon">
         </figure>
         <figure>
           <img class="chickpeas_img" 
@@ -141,7 +146,8 @@
               640px
             "
           alt="A blue bowl with parsely, chickpeas and hummus and bread on the side"
-          loading="lazy">
+          loading="lazy"
+          title="Photo by Kao Rodriguez">
         </figure>
         <figure>
           <img class="yoghurt" 
@@ -156,7 +162,8 @@
               640px
             "
           alt="Three white bowls continging chickpeas, yoghurt and a green dip"
-          loading="lazy">
+          loading="lazy"
+          title="Photo by ">
         </figure>
       </section>     
       <section class="page2_menu">

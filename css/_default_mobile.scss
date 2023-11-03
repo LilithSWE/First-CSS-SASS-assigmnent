@@ -401,14 +401,16 @@ margin-right: 10px;
   border: none;
   border-radius: 15px;
   justify-self: end;
-  color: #D5D5D5;
+  color: $grayColor;
   padding-inline-start: 10px;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0.2;
+  color: $grayColor;
 }
 input::placeholder{
-  opacity: 0.3;
+
+  color: $grayColor;
 }
 .contact_form_buttons {
   width: 100%;
@@ -426,7 +428,7 @@ input::placeholder{
 }
 .reset:active, .request:active {
   opacity: 0.5;
-  color: #FFFFFF;
+  color: white;
 } 
 .reset {
   background-color: $purpleColor;
@@ -520,7 +522,7 @@ input::placeholder{
 }
 .pop_up button:active {
   opacity: 0.5;
-  color: #FFFFFF;
+  color: white;
 }
 .decline_button {
   background-color: $yellowColor;
