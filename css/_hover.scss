@@ -10,12 +10,6 @@ input.button_animation:hover + .menu .heading_container button span:nth-child(2)
 input.button_animation:hover + .menu .heading_container button span:nth-child(3) {
   right: 0.5vw;
 }
-input.button_animation:checked:hover + .menu .heading_container button span:nth-child(1) {
-  right: 0vw;
-}
-input.button_animation:checked:hover + .menu .heading_container button span:nth-child(3) {
-  right: 0vw;
-}
 .white_arrow:hover {  
   bottom:10px;
 }

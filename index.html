@@ -1,53 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "url": "https://medieinstitutet.github.io/fed23d-html-css-inlamningsuppgift-2-LilithSWE/",
-    "name": "Tough Cookie",
-    "description": "Restaurant"
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://medieinstitutet.github.io/fed23d-html-css-inlamningsuppgift-2-LilithSWE/",
+      "name": "Tough Cookie",
+      "description": "Restaurant"
     }
-</script>      
-
+  </script>      
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fafafa">
   <meta property="og:title" content="Tough Cookie">
   <meta property="og:description" content="Restaurant Tough Cookie">
-
   <meta property="og:type" content="text">
   <meta property="og:url" content="https://medieinstitutet.github.io/fed23d-html-css-inlamningsuppgift-2-LilithSWE/">
-
   <meta property="og:image" content="https://toughcookie.com/assets/photos/Mobile/table_mobile.webp">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="960">
   <meta property="og:image:height" content="640">
   <meta property="og:image:alt" content="Restaurant Tough Cookies interior. White table with table settings for four, wine glases and menues."> 
-
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Tough Cookie</title>
 </head>
-
 <body>
   <div id="container"  class="container"> 
     <input 
       class="button_animation" 
       type="checkbox" 
-      tabindex="1"  
+      tabindex="0"  
       aria-label="menu button"> 
     <div class="menu">
       <div class="heading_container">
         <h1><span class="capitalize">Tough Cookie</span></h1> 
-          <button class="nav_button" tabindex="-1">
-           <span> </span>
-           <span> </span>
-           <span> </span>
-          </button> 
+        <button class="nav_button" aria-label="menu button" tabindex="-1">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </button> 
       </div>  
       <nav>
         <ul>
@@ -89,12 +84,14 @@
             loading="lazy"
             title="Photo by Mae Mu">
         </figure>
-        <a href="#sallad_info"><img 
+        <a href="#sallad_info">
+          <img 
           class="white_arrow" 
           src="assets/icons/arrow.svg"
           alt="white arrow press to move down"
           width="40"
-          loading="lazy"></a>
+          loading="lazy">
+        </a>
         <div id="sallad_info" class="sallad_info_scroll_placement"></div>
       </div>  
       <div class="page1_bottom_part">  
@@ -107,17 +104,17 @@
         <div class="explore">
           <a href="#page2"><span class="capitalize">explore menu</span></a> 
           <img class="black_arrow" 
-          src="assets/icons/arrow2.svg" 
-          width="40"
-          alt="black arrow press to access restaurant menu"
-          loading="lazy">
+            src="assets/icons/arrow2.svg" 
+            width="40"
+            alt="black arrow press to access restaurant menu"
+            loading="lazy">
         </div> 
       </div>
     </div>     
     <div id="page2" class="page2_container">
       <section class="menu_images">
         <figure>
-          <img class="hummus" 
+          <img  
           srcset="
             assets/photos/Mobile/hummus_mobile.webp 640w, 
             assets/photos/Tablet/hummus_tablet.webp 1024w, 
@@ -125,45 +122,42 @@
           "
           src="assets/photos/Desktop/hummus_mobile.webp"
           sizes="
-              (min-width: 641px) 1024px, 
-              (min-width: 1025px) 1280px,
-              640px
-            "
+            (min-width: 641px) 1024px, 
+            (min-width: 1025px) 1280px,
+            640px"
           alt="A blue bowl with assorted vegetables, bread, chickpeas and hummus"
           loading="lazy"
           title="Photo by Edgar Castrejon">
         </figure>
         <figure>
-          <img class="chickpeas_img" 
+          <img  
           srcset="
             assets/photos/Mobile/chickpeas_mobile.webp 640w, 
             assets/photos/Tablet/chickpeas_tablet.webp 1024w, 
             assets/photos/Desktop/chickpeas_desktop.webp 1280w"
           src="assets/photos/Desktop/chickpeas_mobile.webp"
           sizes="
-              (min-width: 641px) 1024px, 
-              (min-width: 1025px) 1280px,
-              640px
-            "
+            (min-width: 641px) 1024px, 
+            (min-width: 1025px) 1280px,
+            640px"
           alt="A blue bowl with parsely, chickpeas and hummus and bread on the side"
           loading="lazy"
           title="Photo by Kao Rodriguez">
         </figure>
         <figure>
-          <img class="yoghurt" 
+          <img 
           srcset="
             assets/photos/Mobile/yoghurt_mobile.webp 640w, 
             assets/photos/Tablet/yoghurt_tablet.webp 1024w, 
             assets/photos/Desktop/yoghurt_desktop.webp 1280w"
           src="assets/photos/Desktop/yoghurt_mobile.webp"
           sizes="
-              (min-width: 641px) 1024px, 
-              (min-width: 1025px) 1280px,
-              640px
-            "
+            (min-width: 641px) 1024px, 
+            (min-width: 1025px) 1280px,
+            640px"
           alt="Three white bowls continging chickpeas, yoghurt and a green dip"
           loading="lazy"
-          title="Photo by ">
+          title="Photo by Mor Shani">
         </figure>
       </section>     
       <section class="page2_menu">
@@ -215,25 +209,33 @@
     </div> 
     <div id="page3" class="page3_container">
       <section class="contact_form">
-        <form action="www.example.com/contact">
+        <form action="www.toughcookie.com/contact">
           <fieldset>
-            <legend><h2><span class="capitalize">book your table</span></h2></legend>
-            <label><span class="capitalize">name</span>
+            <legend>
+              <h2><span class="capitalize">book your table</span></h2>
+            </legend>
+            <label>
+              <span class="capitalize">name</span>
               <input type="text" name="name" placeholder="John Smith">
             </label>
-            <label><span class="capitalize">e-mail</span>
+            <label>
+              <span class="capitalize">e-mail</span>
               <input type="email" name="email" placeholder="j.smith@gmail.com">
             </label>            
-            <label><span class="capitalize">phone</span>
+            <label>
+              <span class="capitalize">phone</span>
               <input type="tel" name="telephone" placeholder="070 123 45 67">
             </label>
-            <label><span class="capitalize">date</span>
+            <label>
+              <span class="capitalize">date</span>
               <input type="date" name="date">
             </label>
-            <label><span class="capitalize">party size</span>
+            <label>
+              <span class="capitalize">party size</span>
               <input type="number" name="number" placeholder="2">
             </label>
-            <label><span class="capitalize">allergies</span>
+            <label>
+              <span class="capitalize">allergies</span>
               <input type="text" name="allergies" placeholder="allergies">
             </label>
             <div class="contact_form_buttons">

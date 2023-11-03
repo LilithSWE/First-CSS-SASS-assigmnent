@@ -6,7 +6,6 @@
   width: 100%;
   max-width: 100vw;
 }
-/* MENU */
 .heading_container {
   grid-column: 1/ span 1;
   grid-row: 1/ span 2;
@@ -18,17 +17,18 @@
   max-width: 100%;
   justify-items: center;
   min-height: 835px;
-}
-h1 {
-  letter-spacing: 2.8dvw;
-  word-spacing: 0.5rem;
-  padding: 0;
-  grid-row: 2;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-  font-size: 3rem;
-  letter-spacing: 0;
-  word-spacing: 0rem;
+  min-width:auto;
+  h1 {
+    letter-spacing: 2.8dvw;
+    word-spacing: 0.5rem;
+    padding: 0;
+    grid-row: 2;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: clamp(3rem, 4vw, 3.5rem);
+    letter-spacing: 0;
+    word-spacing: 0rem;
+  }
 }
 .button_animation {
   width: 4.2vw;
@@ -37,7 +37,7 @@ h1 {
   top: 1.8vh;
   position: fixed;
 }
-button.nav_button {
+.nav_button {
   width: 4vw;
   height: 4vw;
   left: 1.8vw;
@@ -47,7 +47,8 @@ button.nav_button {
 }
 button span {
   width: 100%;
-  height: 5px;
+  max-width: 50px;
+  height: 8px;
   border-radius: 1rem;
   margin-bottom: 0.5rem;
   position: relative;
@@ -65,7 +66,6 @@ nav {
   grid-row: 1;
   padding-left: 10vw;
 } 
-/* PAGE 1 */
 .page1_container {
   grid-column: 2 / 13;
   grid-row: 1 / span 1;
@@ -88,7 +88,7 @@ nav {
 .tahini {
   font-size: 8rem;
 }
- .chickpeas {
+.chickpeas {
   font-size: 3rem;
   top: 210px;
   left: 20px;
@@ -107,10 +107,10 @@ nav {
   padding: 20px;
   height: 100%;
   overflow: hidden;
-}
-.page1_top_text p { 
-  font-size: clamp(1rem, 2.5vw, 5rem);
-  padding: 10px;
+  p { 
+    font-size: clamp(1rem, 2.5vw, 5rem);
+    padding: 10px;
+  }
 }
 .container_img_arrow {   
   grid-column: 1 / span 5;
@@ -144,10 +144,10 @@ bottom: -16px;
   height: 100%;
   margin-left: -1vw;
   overflow: hidden;
-}
-.page1_bottom_part p {
-  padding: 0;
-}
+  p {
+    padding: 0;
+  }
+} 
 .explore {
   padding: 0;
   font-size: clamp(1rem, 2.5vw, 5rem);
@@ -160,7 +160,6 @@ bottom: -16px;
   width: 2.5vw;
   transform: none;
 }
-/* PAGE 2 */
 .page2_container {
   grid-column: 2 / 13;
   grid-row: 2 / span 1;
@@ -183,17 +182,17 @@ bottom: -16px;
   grid-template-columns: 30% 34% 34%;
   grid-template-rows: 100%;
   gap: 1%;
-  align-items: center;  
+  align-items: center; 
+  figure {
+    margin-block: 0px;
+    margin-inline: 0px;
+    height: 100%;
+    width: 100%;
+    img {
+      max-height: 100%;
+    } 
+  } 
 }
-.menu_images figure {
-  margin-block: 0px;
-  margin-inline: 0px;
-  height: 100%;
-  width: 100%;
-}
-.menu_images figure img {
-  max-height: 100%;
-} 
 .page2_menu {
   gap: 8px;
   grid-column: 1 / span 11;
@@ -203,23 +202,24 @@ bottom: -16px;
   margin: 0;
   padding: 0;
   margin-top: 0;
+  article {
+    div {
+      flex-wrap: nowrap;
+    }
+    p {
+      font-size: clamp(1rem, 1.5vw, 13rem);
+      .new, 
+      .vegan, 
+      .popular {
+        font-size: clamp(0.8rem, 0.8vw, 2rem);
+        width: 5vw;
+      }
+    }
+  }
 }
 .page2_menu article h3, .page2_menu article div h3 {
   font-size: clamp(1.5rem, 2.5vw, 8rem);
 }
-.page2_menu article div {
-  flex-wrap: nowrap;
-}
-.page2_menu article p {
-  font-size: clamp(1rem, 1.5vw, 13rem);
-}
-.page2_menu article p.new, 
-.page2_menu article p.vegan, 
-.page2_menu article p.popular {
-  font-size: clamp(0.8rem, 0.8vw, 2rem);
-  width: 5vw;
-}
-/* PAGE 3 */
 .page3_container {
   grid-column: 1 / 13;
   grid-row: 3;
@@ -242,20 +242,20 @@ bottom: -16px;
   background-color: $greenColor;
   display: flex;
   align-items: center;
-}
-.contact_form form fieldset {
-  font-size: clamp(1.4rem, 2.5vw, 10rem);
-  padding-top: 1.5rem;
-  text-align: start;
-}
-.contact_form form fieldset label {
-  display: grid;
-  grid-template-columns: 1fr 2fr 10%;
-  padding-bottom: 1.2rem;
-}
-.contact_form form fieldset label input {
-  border-radius: 20px;
-  padding-inline-start: 20px;
+  form fieldset {
+    font-size: clamp(1.4rem, 2.5vw, 10rem);
+    padding-top: 1.5rem;
+    text-align: start;
+    label {
+      display: grid;
+      grid-template-columns: 1fr 2fr 10%;
+      padding-bottom: 1.2rem;
+      input {
+        border-radius: 20px;
+        padding-inline-start: 20px;
+      }
+    }
+  }
 }
 .contact_form_buttons {
   padding-top: 1rem;
@@ -285,7 +285,7 @@ bottom: -16px;
 }
 .contact_info_background {
   width: 85%;
-  background-image: url(/assets/photos/Desktop/table_desktop.webp);
+  background-image: url(../assets/photos/Desktop/table_desktop.webp);
 }
 .contact_info_text {
   gap: 1.2rem;
@@ -312,13 +312,13 @@ bottom: -16px;
   align-items: center;
   text-align: start;
   grid-column: span 12;
-}
-.pop_up p {
-  font-size: clamp(1.5rem, 1vw, 8rem);
-  margin-top: 0;
-  grid-column: 2 / span 6;
-  grid-row: 1;
-  padding-left: 2vw;
+  p {
+    font-size: clamp(1.5rem, 1vw, 8rem);
+    margin-top: 0;
+    grid-column: 2 / span 6;
+    grid-row: 1;
+    padding-left: 2vw;
+  }
 }
 .pop_up_buttons {
   justify-content: center;
@@ -326,10 +326,9 @@ bottom: -16px;
   grid-column: 8 / span 5;
   grid-row: 1;
   height: auto;
+  button {
+    width: 40%;
+    margin: 0;
+    font-size: clamp(1rem, 2.5vw, 8rem);
+  }
 }
-.pop_up_buttons button {
-  width: 40%;
-  margin: 0;
-  font-size: clamp(1rem, 2.5vw, 8rem);
-}
-

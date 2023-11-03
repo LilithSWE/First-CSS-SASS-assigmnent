@@ -1,5 +1,4 @@
 
-/* MAJOR ELEMENTS */
 body {
   min-width: 400px;
   background-color: black;
@@ -24,12 +23,12 @@ a {
   text-decoration: none; 
   color: black;
 }
-/* MENU */
 .heading_container {
   position: fixed;
   top: 0;
   left:0;
   width: 100%;
+  min-width: 420px;
   height: 80px;
   background-color: black;
   display: grid;
@@ -38,14 +37,15 @@ a {
   display: grid;
   z-index: 8;
   grid-template-columns: 80% 20%;
-}
-h1 {
-  color: white;
-  margin: 0;
-  align-self: center;
-  letter-spacing: 1.5dvw;
-  word-spacing: 0.5rem;
-  padding-left: 10px;
+  h1 {
+    color: white;
+    margin: 0;
+    align-self: center;
+    letter-spacing: 1.5dvw;
+    word-spacing: 0.5rem;
+    padding-left: 10px;
+    font-size: 2.8rem;
+  }
 }
 .button_animation {
   width: 40px;
@@ -59,8 +59,8 @@ h1 {
 .nav_button {
   background: transparent;
   border: 0;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   z-index: 9;
   position: fixed;
   margin-top: 10px;
@@ -68,11 +68,12 @@ h1 {
   right: 35px;
 }   
 button span {
-  width: 30px;
-  height: 5px;
+  width: 40px;
+  height: 8px;
   background-color: $yellowColor;
   border-radius: 4px;
   margin-bottom: 3px;
+  margin-left: 8px;
   display: block;
   position: relative;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -113,26 +114,25 @@ nav {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 5;
   position: fixed; 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    li a{
+      color: white;
+      font-size: clamp(3rem, 10vw, 5rem);
+      padding: 2rem;
+      transition: all 0.4s;
+      line-height: 15vh;
+      min-height: 380px;
+    }
+  }
 }
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-}
-nav ul li a{
-  color: #FFFFFF;
-  font-size: clamp(3rem, 10vw, 5rem);
-  padding: 2rem;
-  transition: all 0.4s;
-  line-height: 15vh;
-  min-height: 380px;
-}
-/* PAGE 1 */
 .page1_container {
   border-top: 10px solid $yellowColor;
   grid-column: span 2;
@@ -181,12 +181,12 @@ nav ul li a{
 .page1_top_text {
   width: 100%;
   height: auto;
-}
-.page1_top_text p { 
-  padding: 1rem;
-  font-size: clamp(1.4rem, 5vw, 5rem);
-  font-weight: 500;
-  color: $greenColor;
+  p { 
+    padding: 1rem;
+    font-size: clamp(1.4rem, 5vw, 5rem);
+    font-weight: 500;
+    color: $greenColor;
+  }
 }
 .container_img_arrow {   
   position: relative;
@@ -194,6 +194,8 @@ nav ul li a{
 .sallad {
  object-fit:contain;
  max-height: 100%;
+ height: auto;
+ width: auto;
 }
 .white_arrow {
   height: 30px;
@@ -220,10 +222,10 @@ nav ul li a{
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-.page1_bottom_part p {
-  padding: 10px;
-  margin: 0;
+  p {
+    padding: 10px;
+    margin: 0;
+  }
 }
 .explore {
   padding: 10px;
@@ -239,7 +241,6 @@ nav ul li a{
   bottom: -5px;
   position: relative;
 }
-/* PAGE 2 */
 .page2_container {
   background-color: $yellowColor;
   grid-column: span 2;
@@ -263,18 +264,18 @@ nav ul li a{
   padding-right: 10px;
   padding-left: 10px;
   margin-top: 20px;
+  figure {
+    margin-block: 5px;
+    margin-inline: 5px;
+    height: 80%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
-.menu_images figure {
-  margin-block: 5px;
-  margin-inline: 5px;
-  height: 80%;
-  width: 100%;
-}
-.menu_images figure img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} 
 .page2_menu {
   display: flex;
   flex-grow: 1;
@@ -285,18 +286,42 @@ nav ul li a{
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
-}
-.page2_menu article {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 15%;
-  background-color: white;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  height: fit-content;
-  text-align: start;
-  align-items: center;
-  height: 100%;
-  max-height: 100%;
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 15%;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: fit-content;
+    text-align: start;
+    align-items: center;
+    height: 100%;
+    max-height: 100%;
+    div {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-right: 10px;
+    }
+    p {
+      font-size: clamp(1rem, 3vw, 10rem);
+      margin: 0;
+      .new, 
+      .vegan, 
+      .popular {
+        font-size: clamp(0.8rem, 2vw, 5rem);
+        padding: 1px;
+        height: auto;
+        width: 15vw;
+        text-align: center;
+        font-family: serif;
+        font-weight: 500;
+        display: inline;
+        margin: 10px;
+      }
+    }
+  }
 }
 .page2_menu article h3, .page2_menu article div h3 {
   font-size: clamp(1.5rem, 4vw, 8rem);
@@ -306,33 +331,9 @@ nav ul li a{
   margin-bottom: 0;
   font-weight: 500;
 }
-.page2_menu article div {
-display: flex;
-flex-grow: 1;
-flex-wrap: wrap;
-align-items: center;
-margin-right: 10px;
-}
-.page2_menu article p {
-  font-size: clamp(1rem, 3vw, 10rem);
-  margin: 0;
-}
 .price {
   text-align: end;
   padding-right: 10px;
-}
-.page2_menu article p.new, 
-.page2_menu article p.vegan, 
-.page2_menu article p.popular {
-  font-size: clamp(0.8rem, 2vw, 5rem);
-  padding: 1px;
-  height: auto;
-  width: 15vw;
-  text-align: center;
-  font-family: serif;
-  font-weight: 500;
-  display: inline;
-  margin: 10px;
 }
 .new { 
   background-color: $purpleColor;
@@ -353,7 +354,6 @@ margin-right: 10px;
 .popular {
   background-color: $yellowColor;
 }
-/* PAGE 3 */
 .page3_container {
   border-top: 10px solid white;
   background-color: $greenColor;
@@ -370,46 +370,45 @@ margin-right: 10px;
 }
 .contact_form {
   height: auto;
-}
-.contact_form form fieldset {
-  font-size: clamp(1.4rem, 7vw, 15rem);
-  padding-top: 3vh;
-  border: none;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-.contact_form form fieldset h2 {
-  margin-block-end: 0;
-}
-.contact_form form fieldset label {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 7px;
-  justify-items: start;
-  align-items: center;
-  text-align: start;
-  padding-bottom: 1rem;
-}
-.contact_form form fieldset label span {
-  display: block;
-}
-.contact_form form fieldset label input {
-  height: auto;
-  width: 100%;
-  border: none;
-  border-radius: 15px;
-  justify-self: end;
-  color: $grayColor;
-  padding-inline-start: 10px;
+  form fieldset {
+    font-size: clamp(1.4rem, 7vw, 15rem);
+    padding-top: 3vh;
+    border: none;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    h2 {
+      margin-block-end: 0;
+    }
+    label {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 7px;
+      justify-items: start;
+      align-items: center;
+      text-align: start;
+      padding-bottom: 1rem;
+      span {
+        display: block;
+      }
+      input {
+        height: auto;
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        justify-self: end;
+        color: $grayColor;
+        padding-inline-start: 10px;
+      }
+    }
+  }
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0.2;
   color: $grayColor;
 }
 input::placeholder{
-
   color: $grayColor;
 }
 .contact_form_buttons {
@@ -446,7 +445,7 @@ input::placeholder{
   margin-top: 40px;
 }
 .contact_info_background {
-  background-image: url(/assets/photos/Mobile/table_mobile.webp);
+  background-image: url(../assets/photos/Mobile/table_mobile.webp);
   background-attachment: scroll;
   background-position: center;
   filter: blur(2px);
@@ -467,14 +466,14 @@ input::placeholder{
   text-shadow: -3px -3px 0px black;
   text-align: start;
   padding-top: 10%;
-}
-.contact_info_text p{
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.contact_info_text figure {
-  display: flex;
-  flex-grow: 1;
+  p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  figure {
+    display: flex;
+    flex-grow: 1;
+  }
 }
 .contact_figure {
   margin-block: 0px;
@@ -498,27 +497,27 @@ input::placeholder{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-.pop_up p {
-  margin-block-end: 0;
-  font-size: clamp(1.5rem, 4vw, 8rem);
-  color: white;
-  margin-top: 20px;
-  display: block;
-  width: 100%;
+  p{
+    margin-block-end: 0;
+    font-size: clamp(1.5rem, 4vw, 8rem);
+    color: white;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
 }
 .pop_up_buttons {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-}
-.pop_up_buttons button {
-  width: 40%;
-  border-radius: 15px;
-  margin: 30px;
-  border: none;
-  font-size: clamp(2rem, 4vw, 8rem);
-  transition: all 0.2s;
+  button {
+    width: 40%;
+    border-radius: 15px;
+    margin: 30px;
+    border: none;
+    font-size: clamp(2rem, 4vw, 8rem);
+    transition: all 0.2s;
+  }
 }
 .pop_up button:active {
   opacity: 0.5;
