@@ -10,7 +10,7 @@ Built with:
 ## ABOUT THIS PROJECT
 In this assignment I got images, with two versions of each, of how the webpage should look like in desktop mode. I was instructed to come up with the mobile and tablet layout myself. 
 Further instructions included:
-- No need for JavaScript. Only HTML and CSS/SASS.
+- No need for JavaScript. Only HTML and CSS/SCSS.
 - The site must be a one-pager. 
 - It should be responsive. 
 - Color codes: Green 100%, 0%, 78%, 0%. Yellow 0%, 5%, 79%, 0%. Cancel-button in the formular 263°, 100%, 73%.
