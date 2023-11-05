@@ -1,4 +1,4 @@
-# ASSIGNMENT - CUSTOMER PROJECT - THOUGH COOKIE
+# ASSIGNMENT - CUSTOMER PROJECT - TOUGH COOKIE
 _"Front End Developer" student at Medieinstituet_
 ## WHAT I USED
 Built with: 
